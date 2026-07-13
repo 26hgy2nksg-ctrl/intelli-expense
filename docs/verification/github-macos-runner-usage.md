@@ -30,8 +30,9 @@ GitHub-hosted Mac runners are reserved exclusively for Intelli-Expense native Ma
 | 2026-07-12 | [29176624602](https://github.com/dctmfoo/intelli-expense/actions/runs/29176624602) | Disclosure-selector retry after first hosted hierarchy signal | Confirmed zero `DisclosureTriangle` descendants; artifact exposed Folders as a clickable outline-header `StaticText` | 1m 42s | 2 |
 | 2026-07-12 | [29176748941](https://github.com/dctmfoo/intelli-expense/actions/runs/29176748941) | Artifact-grounded Folders header retry | Header label existed but did not toggle; hierarchy geometry located the native disclosure eight points before the text | 1m 54s | 2 |
 | 2026-07-12 | [29176829909](https://github.com/dctmfoo/intelli-expense/actions/runs/29176829909) | Native disclosure geometry retry | Coordinate click was delivered eight points before the Folders label, but the selected folder remained visible; hosted XCUI still could not toggle the system disclosure | 2m 04s | 3 |
+| 2026-07-12 | [29208704932](https://github.com/dctmfoo/intelli-expense/actions/runs/29208704932) | Receipt-selection Amount regression proof | Seeded rows loaded, but the test queried the Amount field before explicitly selecting the first receipt; production assertion was not reached | 2m 30s | 3 |
 
-Tracked actual job time: **37m 22s**. Conservative rounded usage: **45 Mac runner-minutes**.
+Tracked actual job time: **39m 52s**. Conservative rounded usage: **48 Mac runner-minutes**.
 
 ## Dispatch checklist
 

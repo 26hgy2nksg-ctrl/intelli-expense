@@ -31,6 +31,10 @@ final class IntelliExpenseMacUITests: XCTestCase {
     func testSelectingReceiptRefreshesEditableAmount() {
         launchApp("-UITestSeedMacVisualPolishLibrary")
 
+        let firstReceipt = staticText(startingWith: "REWE CITY")
+        XCTAssertTrue(firstReceipt.waitForExistence(timeout: 5))
+        firstReceipt.click()
+
         let amount = element("mac.detail.amount")
         XCTAssertTrue(amount.waitForExistence(timeout: 5))
         XCTAssertEqual(amount.value as? String, "84.50")
