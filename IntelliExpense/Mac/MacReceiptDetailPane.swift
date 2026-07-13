@@ -79,12 +79,10 @@ struct MacReceiptDetailPane: View {
                 }
             }
         }
-        .onAppear {
-            if amountEditor == nil {
-                amountEditor = ReceiptDetailAmountEditor(receipt: receipt)
-            }
-            amountEditor?.resetFromReceipt()
-            amountText = amountEditor?.amountText ?? NSDecimalNumber(decimal: receipt.totalAmount).stringValue
+        .onChange(of: receipt.persistentModelID, initial: true) {
+            let editor = ReceiptDetailAmountEditor(receipt: receipt)
+            amountEditor = editor
+            amountText = editor.amountText
         }
         .onDisappear {
             try? modelContext.save()
@@ -108,6 +106,7 @@ struct MacReceiptDetailPane: View {
                     amountEditor?.amountText = newValue
                 }
             ))
+            .accessibilityIdentifier("mac.detail.amount")
             if let validationMessageKey = amountEditor?.validationMessageKey {
                 Text(LocalizedStringKey(validationMessageKey))
                     .contentScaledFont(.footnote)
