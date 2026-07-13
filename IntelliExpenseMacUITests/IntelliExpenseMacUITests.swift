@@ -166,6 +166,11 @@ final class IntelliExpenseMacUITests: XCTestCase {
 
     func testSidebarBottomBarCreationDisclosureAndBadge() {
         launchApp("-UITestSeedMacVisualPolishLibrary")
+
+        let newFolderButton = element("mac.sidebar.newFolder")
+        XCTAssertTrue(newFolderButton.waitForExistence(timeout: 5))
+        XCTAssertGreaterThan(newFolderButton.frame.width, 180)
+
         openNewFolder()
 
         let nameField = element("group.editor.name")

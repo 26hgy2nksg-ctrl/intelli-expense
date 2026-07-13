@@ -404,17 +404,29 @@ struct MacLibraryView: View {
             }
         }
         .safeAreaBar(edge: .bottom, alignment: .leading) {
+            newFolderFooter
+        }
+        .navigationTitle("app.name")
+        .focused($isSidebarFocused)
+    }
+
+    private var newFolderFooter: some View {
+        VStack(spacing: 0) {
+            Divider()
+
             Button {
                 isShowingCreateGroup = true
             } label: {
                 Label("groups.create.row", systemImage: "folder.badge.plus")
                     .lineLimit(1)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .contentShape(Rectangle())
             }
             .buttonStyle(.borderless)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
             .accessibilityIdentifier("mac.sidebar.newFolder")
         }
-        .navigationTitle("app.name")
-        .focused($isSidebarFocused)
     }
 
     @ViewBuilder
