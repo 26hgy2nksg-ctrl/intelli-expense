@@ -1,0 +1,51 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit-tests:
+    runs-on: macos-26
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Xcode version
+        run: xcodebuild -version
+
+      - name: Boot the newest available iPhone simulator
+        run: |
+          UDID=$(xcrun simctl list devices available --json | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)['devices']
+          candidates = []
+          for runtime, devices in data.items():
+              if '.iOS-' not in runtime:
+                  continue
+              version = tuple(int(p) for p in runtime.rsplit('iOS-', 1)[-1].split('-'))
+              for d in devices:
+                  if d.get('isAvailable') and d['name'].startswith('iPhone'):
+                      candidates.append((version, d['name'], d['udid']))
+          candidates.sort()
+          print(candidates[-1][2])
+          ")
+          xcrun simctl boot "$UDID"
+          xcrun simctl list devices booted
+          echo "SIM_UDID=$UDID" >> "$GITHUB_ENV"
+
+      - name: Run ExpenseCore package tests
+        run: make test-core
+
+      - name: Run app unit tests
+        run: make test-app-unit SIM_DEST="platform=iOS Simulator,id=$SIM_UDID"

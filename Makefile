@@ -63,6 +63,9 @@ test-core: ## Run ExpenseCore package tests.
 test-app: ## Run app unit and UI tests on the standard iOS simulator.
 	@xcodebuild -project "$(PROJECT)" -scheme "$(SCHEME)" -destination "$(SIM_DEST)" test
 
+test-app-unit: ## Run only app unit tests on the standard iOS simulator; no UI automation.
+	@xcodebuild -project "$(PROJECT)" -scheme "$(SCHEME)" -destination "$(SIM_DEST)" test "-only-testing:IntelliExpenseTests"
+
 test-app-beta: check-xcode-beta ## Compile the iOS 27 image path and run app tests on the configured simulator.
 	@DEVELOPER_DIR="$(XCODE_BETA_DEVELOPER_DIR)" xcodebuild -project "$(PROJECT)" -scheme "$(SCHEME)" -destination "$(SIM_DEST)" -derivedDataPath "$(BETA_DERIVED_DATA)" test XCODE_27_SWIFT_CONDITION=XCODE_27_FOUNDATION_MODELS
 
