@@ -11,3 +11,12 @@ DerivedData/
 *.swp
 xcresult/
 *.xcresult
+
+# Local-only personal/release material (see docs/local-development.md)
+ASC.md
+PROGRESS.md
+Config/ExportOptions.AppStore.plist
+marketing/
+docs/assets/app-icon-options/
+docs/specs/SPEC-oss-publication.md
+private/
