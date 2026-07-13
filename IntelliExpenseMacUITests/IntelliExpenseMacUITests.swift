@@ -28,6 +28,36 @@ final class IntelliExpenseMacUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Select a receipt"].waitForExistence(timeout: 5))
     }
 
+    func testSelectingReceiptRefreshesEditableAmount() {
+        launchApp("-UITestSeedMacVisualPolishLibrary")
+
+        let firstReceipt = staticText(startingWith: "REWE CITY")
+        XCTAssertTrue(firstReceipt.waitForExistence(timeout: 5))
+        firstReceipt.click()
+
+        let amount = element("mac.detail.amount")
+        XCTAssertTrue(amount.waitForExistence(timeout: 5))
+        XCTAssertEqual(amount.value as? String, "84.50")
+
+        staticText(startingWith: "Hotel Mitte").click()
+        XCTAssertEqual(
+            XCTWaiter.wait(
+                for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value == %@", "20.00"), object: amount)],
+                timeout: 5
+            ),
+            .completed
+        )
+
+        staticText(startingWith: "New York Cab").click()
+        XCTAssertEqual(
+            XCTWaiter.wait(
+                for: [XCTNSPredicateExpectation(predicate: NSPredicate(format: "value == %@", "10.00"), object: amount)],
+                timeout: 5
+            ),
+            .completed
+        )
+    }
+
     func testFindFiltersWithinTheCurrentReceiptColumn() {
         launchApp("-UITestSeedMacVisualPolishLibrary")
 
@@ -136,6 +166,11 @@ final class IntelliExpenseMacUITests: XCTestCase {
 
     func testSidebarBottomBarCreationDisclosureAndBadge() {
         launchApp("-UITestSeedMacVisualPolishLibrary")
+
+        let newFolderButton = element("mac.sidebar.newFolder")
+        XCTAssertTrue(newFolderButton.waitForExistence(timeout: 5))
+        XCTAssertGreaterThan(newFolderButton.frame.width, 180)
+
         openNewFolder()
 
         let nameField = element("group.editor.name")

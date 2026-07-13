@@ -34,11 +34,30 @@ final class MacVisualPolishTests: XCTestCase {
         XCTAssertTrue(source.contains("ReceiptStore.restore"))
     }
 
+    func testMacDetailAmountEditorRefreshesWhenReceiptSelectionChanges() throws {
+        let source = try String(contentsOf: repoRoot.appending(path: "IntelliExpense/Mac/MacReceiptDetailPane.swift"), encoding: .utf8)
+
+        XCTAssertTrue(source.contains("onChange(of: receipt.persistentModelID, initial: true)"))
+    }
+
     func testMacLibraryUsesNativeDetailPaneInsteadOfIPhoneDetailNavigationStack() throws {
         let source = try String(contentsOf: repoRoot.appending(path: "IntelliExpense/Mac/MacContentView.swift"), encoding: .utf8)
 
         XCTAssertTrue(source.contains("MacReceiptDetailPane("))
         XCTAssertFalse(source.contains("NavigationStack {\n                ReceiptDetailView(receipt: selectedReceipt)"))
+    }
+
+    func testMacSidebarNewFolderFooterMatchesCanonicalLayout() throws {
+        let source = try String(
+            contentsOf: repoRoot.appending(path: "IntelliExpense/Mac/MacContentView.swift"),
+            encoding: .utf8
+        )
+
+        XCTAssertTrue(source.contains("private var newFolderFooter: some View"))
+        XCTAssertTrue(source.contains("Divider()"))
+        XCTAssertTrue(source.contains(".frame(maxWidth: .infinity, alignment: .leading)"))
+        XCTAssertTrue(source.contains(".padding(.horizontal, 16)"))
+        XCTAssertTrue(source.contains(".padding(.vertical, 8)"))
     }
 
     func testMacFolderEditorModalFamilyUsesNativePresentationRoles() throws {
