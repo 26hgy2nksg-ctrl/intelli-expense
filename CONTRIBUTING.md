@@ -34,3 +34,20 @@ For a personal-device build, copy `Makefile.local.example` to `Makefile.local` a
 - Confirm `make test` is green and include the relevant verification result.
 
 The maintainer reviews all changes and may decline work that expands scope, weakens privacy, or adds long-term governance cost before 1.0.
+
+## Local-only files & guardrails
+
+Some files are intentionally kept out of version control:
+
+- `Makefile.local` — your own signing, team, and device values (copied from `Makefile.local.example`).
+- `private/` — a gitignored scratch directory for anything local you do not want committed (notes, real fixtures, drafts). Nothing here is tracked or backed up by git.
+- A handful of maintainer-only release and asset paths listed in `.gitignore`.
+
+After cloning, run:
+
+```sh
+scripts/install-guardrails.sh
+```
+
+This installs local `pre-commit` and `pre-push` hooks that run [gitleaks](https://github.com/gitleaks/gitleaks) against your changes and block accidental commits of local-only paths, and — if `gitleaks` is installed — keeps secrets out of history. The same secret scan runs in CI on every push and pull request (`.github/workflows/secret-scan.yml`). Commits must use a GitHub noreply email; the installer sets a maintainer identity automatically when a local `~/.config/oss-guard/git-identity` file is present, and is a no-op for that step otherwise.
+
