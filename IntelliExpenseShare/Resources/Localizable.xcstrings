@@ -1,0 +1,116 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "share.body" : {
+      "localizations" : {
+        "en" : {
+            "stringUnit" : {
+              "state" : "translated",
+              "value" : "Tap Add to save this receipt for review in Intelli-Expense."
+            }
+          }
+        }
+    },
+    "share.cancel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "share.confirm" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        }
+      }
+    },
+    "share.count" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld image(s)"
+          }
+        }
+      }
+    },
+    "share.error" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not save these images for review."
+          }
+        }
+      }
+    },
+    "share.done" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "share.open" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Intelli-Expense"
+          }
+        }
+      }
+    },
+    "share.open.error" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Intelli-Expense from the Home Screen to confirm the details."
+          }
+        }
+      }
+    },
+    "share.saved.body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved for review. Open Intelli-Expense to confirm the details."
+          }
+        }
+      }
+    },
+    "share.saving" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saving for review..."
+          }
+        }
+      }
+    },
+    "share.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Intelli-Expense"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

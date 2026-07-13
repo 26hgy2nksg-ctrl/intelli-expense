@@ -1,0 +1,32 @@
+{
+  "protocolVersion": 1,
+  "generatedAt": "2026-07-06T00:00:00Z",
+  "inboxPath": "/Users/example/Library/Containers/com.nags.intelliexpense/Data/Library/Application Support/AgentImportBridge/inbox",
+  "processedPath": "/Users/example/Library/Containers/com.nags.intelliexpense/Data/Library/Application Support/AgentImportBridge/processed",
+  "failedPath": "/Users/example/Library/Containers/com.nags.intelliexpense/Data/Library/Application Support/AgentImportBridge/failed",
+  "trips": [
+    {
+      "id": "x-swiftdata://ExpenseGroup/berlin-2026",
+      "name": "Berlin Trip",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "receiptCount": 12,
+      "currenciesPresent": [
+        "EUR",
+        "USD"
+      ],
+      "archived": false
+    },
+    {
+      "id": "x-swiftdata://ExpenseGroup/old-trip",
+      "name": "Old Trip",
+      "startDate": "2025-06-01",
+      "endDate": "2025-06-30",
+      "receiptCount": 8,
+      "currenciesPresent": [
+        "EUR"
+      ],
+      "archived": true
+    }
+  ]
+}

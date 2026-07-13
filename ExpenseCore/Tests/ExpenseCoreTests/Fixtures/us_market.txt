@@ -1,0 +1,8 @@
+ACME MARKET
+Receipt 1109
+06/15/2026
+
+Groceries              $12.00
+Tax                    $1.02
+AMOUNT DUE          USD 13.02
+PAID CASH

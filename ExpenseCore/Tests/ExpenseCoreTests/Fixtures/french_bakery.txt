@@ -1,0 +1,8 @@
+BOULANGERIE LUMIERE
+Ticket 3318
+Date: 15/06/2026
+
+Viennoiseries          10,00 €
+TVA                     1,00 €
+TOTAL TTC              11,00 EUR
+Paiement: Carte

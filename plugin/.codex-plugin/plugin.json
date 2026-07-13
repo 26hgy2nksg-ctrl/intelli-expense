@@ -1,0 +1,33 @@
+{
+  "name": "intelli-expense-import",
+  "version": "1.0.0",
+  "description": "File receipt folders into Intelli-Expense through the app-owned agent import bridge.",
+  "author": {
+    "name": "Intelli-Expense"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "intelli-expense",
+    "receipts",
+    "expense-import",
+    "agent-import"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Intelli-Expense Import",
+    "shortDescription": "Add receipt folders to Intelli-Expense.",
+    "longDescription": "Reads the Intelli-Expense trips manifest, extracts complete receipt records with the agent, asks the user to confirm every field, and writes receipt files plus sidecars into the Mac app inbox.",
+    "developerName": "Intelli-Expense",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Add these receipts to Intelli-Expense.",
+      "Import this receipt folder.",
+      "File my receipts for this trip."
+    ],
+    "brandColor": "#1E7A55"
+  }
+}

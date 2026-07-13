@@ -1,0 +1,1953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03BBBA85ED370E12012D460A /* AgentImportBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483997A0CD11434E6E4D82BE /* AgentImportBridge.swift */; };
+		04D7729879CE8391E59AFB89 /* PersistenceStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31777C41519520DFEB0D6FA /* PersistenceStack.swift */; };
+		06DF0C762582BA60D76DB381 /* MacReceiptDetailPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5D92DFA9D52DAD210A03E /* MacReceiptDetailPane.swift */; };
+		087654F7E3C528CC574D7210 /* IntelliExpenseMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75F8E1BF8E1FE923012095 /* IntelliExpenseMacUITests.swift */; };
+		096AC52A45BA7F864FE472EF /* SharedReceiptInboxDrainProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA741120E014124F685472 /* SharedReceiptInboxDrainProcessor.swift */; };
+		0A208D1582182E48A936363B /* MacDoubleClickActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7DCB10B0B95D203E236E2 /* MacDoubleClickActionView.swift */; };
+		0ADF79F624D64D8C2F157493 /* MacCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AA4EBC5B7182F27029DF33 /* MacCommands.swift */; };
+		0B844FAE56BCD701D90E0FA2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 53182ABE98696665A13B27ED /* Localizable.xcstrings */; };
+		0E28053CF3D198E87A967306 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15A79C66A299BF65F5556D76 /* InfoPlist.xcstrings */; };
+		0EBE17834C4330E497E98FA9 /* IntelliExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FAD482F476D375701E357 /* IntelliExpenseApp.swift */; };
+		103EA576A0DBA8629446A26E /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15A79C66A299BF65F5556D76 /* InfoPlist.xcstrings */; };
+		12C0BCC6E0651ACE00C24BDC /* ReviewViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0D17420960B8EC89147D7 /* ReviewViews.swift */; };
+		1327681A909A147C6C0746B9 /* ToolbarPlacementSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123D072A3941FAD324EB72E /* ToolbarPlacementSupport.swift */; };
+		14ED77D817CDDD67C67C1482 /* FoundationModelReceiptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494DB684EBA557DF617B020 /* FoundationModelReceiptService.swift */; };
+		15F8F6CC79B79EDD1BFE9E29 /* PersistenceStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31777C41519520DFEB0D6FA /* PersistenceStack.swift */; };
+		166F055D63CF673464791F6F /* WidgetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05660F67D1E178301CD865C /* WidgetAssets.xcassets */; };
+		16C446801899135B748AE1DA /* ShareExtensionHandoffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D3740684E776B77E562448 /* ShareExtensionHandoffTests.swift */; };
+		17148B353B3E8CE986F22FE3 /* ReceiptExportMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9757C87A405B3E2777C2BB5 /* ReceiptExportMapper.swift */; };
+		18B34460CB5313FD0FB5DBB5 /* ReviewViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0D17420960B8EC89147D7 /* ReviewViews.swift */; };
+		19A9F0FFFE826BD6B8AB6B1B /* SharedReceiptInboxDrainProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA741120E014124F685472 /* SharedReceiptInboxDrainProcessor.swift */; };
+		19AF38C4D2BAC4AD966547A3 /* ExpenseFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A00CBC94A4CDC8BD4279412 /* ExpenseFormatters.swift */; };
+		1D21F23F5885D41D87E85D4C /* PersistenceStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31777C41519520DFEB0D6FA /* PersistenceStack.swift */; };
+		1F19549EADB1A14AEEFBD628 /* AgentImportBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62B5E6455AB3E2D1F1B676D /* AgentImportBridgeTests.swift */; };
+		1F28C7A42BE1E965EC326020 /* ReceiptReviewFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2310EDD37A2CD4E0B9921F57 /* ReceiptReviewFormTests.swift */; };
+		1F57990F28C51909C313AF96 /* PDFReceiptPageRasterizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A144261AE77722F13D70225 /* PDFReceiptPageRasterizer.swift */; };
+		1F9571938D30C98475DBDE02 /* AppMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795642A221E1C29831DC1CAA /* AppMetadata.swift */; };
+		247C9F30353610438438FE75 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEDFD91FAED6C1BA35A3CB2 /* ShareViewController.swift */; };
+		250832F54C57E53080ACECA2 /* CategoryComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C02420C7FEF2BEF12554F38 /* CategoryComposer.swift */; };
+		2651F2A35AE679879F5AC24B /* DeepLinkRoutingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B009F8DDAA868D7213344E /* DeepLinkRoutingTests.swift */; };
+		265BBAC021ACF840CB902638 /* CategoryComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C02420C7FEF2BEF12554F38 /* CategoryComposer.swift */; };
+		276B2B84BC51D16AA555E888 /* SharedReceiptInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E467367B52C2597FFBD234 /* SharedReceiptInbox.swift */; };
+		27BEF31C7C43B80EC5DCF486 /* GroupsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD35E0D6CEDF4CF37F8022C /* GroupsViews.swift */; };
+		286038B71B9249118BF960BB /* ReceiptReviewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADD51BDB5A43272A0C3215 /* ReceiptReviewForm.swift */; };
+		29F70F72DD31CBD50E203F39 /* ReceiptReviewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADD51BDB5A43272A0C3215 /* ReceiptReviewForm.swift */; };
+		2A8D021C10112633B7EE3B5B /* PlatformImageSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72833F1FAC084504F4AC098C /* PlatformImageSupport.swift */; };
+		2D1CADC0B6D9964E2A6C4316 /* AgentImportBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483997A0CD11434E6E4D82BE /* AgentImportBridge.swift */; };
+		2DCD51EF6981F6AF95D190EF /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 88F8E64E941F74AE57B08C4D /* AppShortcuts.xcstrings */; };
+		2F83197F57C5CF7BE6714B02 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46B4A0A9ECBEEF3BCD6EF5 /* PersistenceTests.swift */; };
+		2FFC8DE90D62F4896D7080BC /* IntelliExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FAD482F476D375701E357 /* IntelliExpenseApp.swift */; };
+		30B04DFFE1E591678756E7BB /* SharedReceiptInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E467367B52C2597FFBD234 /* SharedReceiptInbox.swift */; };
+		30D6D3D7DEDBEF001752C3E7 /* ReceiptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADAA4132A8FDF8E1CE013CA /* ReceiptStore.swift */; };
+		3365F56A7F0B484A2ADDFBDF /* ExpenseFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A00CBC94A4CDC8BD4279412 /* ExpenseFormatters.swift */; };
+		34294C15C093A82DD4C316F1 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3903787CA9AF27EBAC6F60F1 /* ShareSheet.swift */; };
+		34658EC2640FFC609A04EDC5 /* ReceiptProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE4D7FD4C20551B9109D82 /* ReceiptProcessingPipeline.swift */; };
+		397BBF01703CBE31F7FDE946 /* PlatformPresentationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49499121735FE4567AE44CA3 /* PlatformPresentationSupport.swift */; };
+		3A0AE2BB831DB47DAC44FCAA /* AppMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795642A221E1C29831DC1CAA /* AppMetadata.swift */; };
+		3B9ECD07E0DF5CD21B48375B /* ReceiptExportMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9757C87A405B3E2777C2BB5 /* ReceiptExportMapper.swift */; };
+		3C1D47D4D99F38BF4E177F66 /* GroupsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD35E0D6CEDF4CF37F8022C /* GroupsViews.swift */; };
+		3D09EF3B467E39AB296F004D /* PersistenceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23E005ACB1B5EDC865402B /* PersistenceModels.swift */; };
+		3D9F38958C69623ED77DADC5 /* TripDetailBreakdownRowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E735E4AA694FA33E2B01CEE2 /* TripDetailBreakdownRowsTests.swift */; };
+		3FA2BDC3CDDA95F88F0664AA /* MacContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE34C2E9D5972F93B9FDC5 /* MacContentView.swift */; };
+		404D5043284CA06721CFA090 /* CaptureViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5151EF664FE899F325F05114 /* CaptureViews.swift */; };
+		413C40566FD27CD4E38EE2A5 /* SharedReceiptInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E467367B52C2597FFBD234 /* SharedReceiptInbox.swift */; };
+		41884C0E412F29D04AE0E573 /* CategoryComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C02420C7FEF2BEF12554F38 /* CategoryComposer.swift */; };
+		423C9E26CEA2633F4140B83A /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3903787CA9AF27EBAC6F60F1 /* ShareSheet.swift */; };
+		433D9B35403DEFE35E778229 /* MacCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AA4EBC5B7182F27029DF33 /* MacCommands.swift */; };
+		4383C4305EB81E04BE35F5D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF254886FD87B7C542C36684 /* Assets.xcassets */; };
+		4551B5C427C8B7CA6517B0BC /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3903787CA9AF27EBAC6F60F1 /* ShareSheet.swift */; };
+		458AB2FCCA04BF3A6741BA62 /* ScanReceiptIntentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C553E15F40E09F5BF49577 /* ScanReceiptIntentTests.swift */; };
+		45DFC7C2115A10FB7E1B770D /* SharedReceiptInbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E467367B52C2597FFBD234 /* SharedReceiptInbox.swift */; };
+		460A1C8B50E42D403265F287 /* PlatformPresentationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49499121735FE4567AE44CA3 /* PlatformPresentationSupport.swift */; };
+		460AEEC4752F12F35618B92D /* ReceiptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADAA4132A8FDF8E1CE013CA /* ReceiptStore.swift */; };
+		4689A509819AC027E8C1075B /* IntelliExpenseShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 039482CD570E0FB0D02DD51E /* IntelliExpenseShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		47C71B1A2AE114900C7AA47E /* CategoryDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB82DA3B957B1B8468A4536 /* CategoryDisplay.swift */; };
+		499FC6D56934DD39053DAFD9 /* CapturePipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E6C1ED7E3219FE1C83550A /* CapturePipelineTests.swift */; };
+		4B447FDFB1DED6D6098F4B6D /* ReceiptProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE4D7FD4C20551B9109D82 /* ReceiptProcessingPipeline.swift */; };
+		4EB3E890FF67FFB217F187BE /* ScanReceiptIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32D38E0BB2B68B69CB38F2 /* ScanReceiptIntent.swift */; };
+		4EED9D67462A3FEF54C9EAD5 /* FolderUserFacingRenameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BC5C802DA79FE0978E1C7 /* FolderUserFacingRenameTests.swift */; };
+		5119412D1F0874B249A4A5E8 /* ToolbarPlacementSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123D072A3941FAD324EB72E /* ToolbarPlacementSupport.swift */; };
+		51F0B5D38E3BF328B4168FF7 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69AA2840EF41469E54CE5D /* AppServices.swift */; };
+		5211CBB6C291460E18DFC4D9 /* VisionDocumentOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4C67C1F6E6ADC1F166DA1 /* VisionDocumentOCRService.swift */; };
+		53AD1E9D5D576CB32E4F33FC /* SandboxSeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404621EC2436A1DAC90FF8FC /* SandboxSeedData.swift */; };
+		53EE46B5035FD743DE547B8F /* MacDoubleClickActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7DCB10B0B95D203E236E2 /* MacDoubleClickActionView.swift */; };
+		53FE0C528BA8CAB0EBC24BCD /* DeepLinkRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8DBD5A984EE934997C5C /* DeepLinkRouting.swift */; };
+		54ED5573AEAD7F5C9DA2A0EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF254886FD87B7C542C36684 /* Assets.xcassets */; };
+		568F1EED4C0BD50E210926EF /* ExternalCaptureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C546AF6A909C298F2183208 /* ExternalCaptureAction.swift */; };
+		5A873DA11F8DEA3B12E72467 /* QuickCaptureWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260537E7087B11AD05AC54A6 /* QuickCaptureWidget.swift */; };
+		5ACD4EB5C70FE0B2908718AC /* SandboxSeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404621EC2436A1DAC90FF8FC /* SandboxSeedData.swift */; };
+		5AFB4EB7DEF29B75DA48D952 /* CategoryDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB82DA3B957B1B8468A4536 /* CategoryDisplay.swift */; };
+		5D943FA199E8CC98B5C87B63 /* ReceiptServiceWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E5A841DC777912C034104 /* ReceiptServiceWrapperTests.swift */; };
+		5E944BADCC2CFA35C762307C /* SharedReceiptInboxDrainProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA741120E014124F685472 /* SharedReceiptInboxDrainProcessor.swift */; };
+		5EC3D33A534D52F43F0EAB78 /* ReceiptsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBD11DDDC342797BF26B40 /* ReceiptsViews.swift */; };
+		61DCEE0C6DD0E4850DA80416 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E114E2314E9E5C6F1D305FF /* ContentView.swift */; };
+		63E8EBC24B8B246DB440DA06 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 82EA741A0E0002E89549764B /* Localizable.xcstrings */; };
+		64096297465DD7D54A06EE89 /* ConfirmedDatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CECDBC04A24137FC02922 /* ConfirmedDatePickerRow.swift */; };
+		64C50028479A457D49C99AEB /* ScanReceiptIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32D38E0BB2B68B69CB38F2 /* ScanReceiptIntent.swift */; };
+		6552A574EB7F382896A7F2EF /* ScanReceiptIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32D38E0BB2B68B69CB38F2 /* ScanReceiptIntent.swift */; };
+		66FAA1EACA5EA162933BCEAE /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DA99E2C54EA8CC119D8D8444 /* AppIcon.icon */; };
+		66FEE921D500E1407C72B3AB /* ExternalCaptureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C546AF6A909C298F2183208 /* ExternalCaptureAction.swift */; };
+		68C1B46EE7275126EFD291EE /* SandboxSeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404621EC2436A1DAC90FF8FC /* SandboxSeedData.swift */; };
+		69B13BE664D91D0CDD12447B /* AgentEntryConfirmationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A04B7307F8F64FBBCC9F40 /* AgentEntryConfirmationViews.swift */; };
+		6A293E8822173415FCFC9CE6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 82EA741A0E0002E89549764B /* Localizable.xcstrings */; };
+		6B7E556AF03783A84AAA07E3 /* ReceiptProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE4D7FD4C20551B9109D82 /* ReceiptProcessingPipeline.swift */; };
+		6C4280C6C3C4680A797AE66C /* MacReceiptDetailPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5D92DFA9D52DAD210A03E /* MacReceiptDetailPane.swift */; };
+		6F33EAEC0B285C126C8C63A2 /* MacReceiptDetailPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5D92DFA9D52DAD210A03E /* MacReceiptDetailPane.swift */; };
+		6F87812FB86CA9F560568B90 /* MacVisualPolishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E03430951D10D347FFCC6 /* MacVisualPolishTests.swift */; };
+		725E8D916904E09CCC3D0822 /* ExpenseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 31E0F2D862B883951212816C /* ExpenseCore */; };
+		72A999EBAA96C53F35B0EA10 /* DocumentCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07846A87102B0E7E13B236D /* DocumentCameraView.swift */; };
+		72F5F9025BD7494336147CBF /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 88F8E64E941F74AE57B08C4D /* AppShortcuts.xcstrings */; };
+		73E590315B6B36200AE6DF1D /* CaptureViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5151EF664FE899F325F05114 /* CaptureViews.swift */; };
+		744E37D5C57A0CB3F4CCE4FC /* FoundationModelReceiptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494DB684EBA557DF617B020 /* FoundationModelReceiptService.swift */; };
+		778547C967380A091F291B2F /* AgentEntryConfirmationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A04B7307F8F64FBBCC9F40 /* AgentEntryConfirmationViews.swift */; };
+		789BDF7EBE25E7460C7740F5 /* MacDesktopBehaviorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD5532C5C1848F94E44B1E /* MacDesktopBehaviorSupport.swift */; };
+		78AC7BE4B0AE34568A1FD53C /* ReceiptImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B10E4F09D6E0328A88517 /* ReceiptImageViewer.swift */; };
+		7ABE3BE25034E25956A2DA58 /* ExpenseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FC9D6DE7F040F9E2E8B81776 /* ExpenseCore */; };
+		7B8DFCA3BDB1B8EE556E94A7 /* MacDoubleClickActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B7DCB10B0B95D203E236E2 /* MacDoubleClickActionView.swift */; };
+		7E333D8ED36B9A587739EC28 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69AA2840EF41469E54CE5D /* AppServices.swift */; };
+		7FE32A91AFA2AEBA1915B9F8 /* ReceiptsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBD11DDDC342797BF26B40 /* ReceiptsViews.swift */; };
+		836033B0938D8A6761E131DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E114E2314E9E5C6F1D305FF /* ContentView.swift */; };
+		84CC04A8AC7349507A614FFE /* PDFReceiptPageRasterizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A144261AE77722F13D70225 /* PDFReceiptPageRasterizer.swift */; };
+		85928F613F66DD99070126DF /* ReceiptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADAA4132A8FDF8E1CE013CA /* ReceiptStore.swift */; };
+		85D7819B30E7F12382D9EE4C /* ReceiptsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBD11DDDC342797BF26B40 /* ReceiptsViews.swift */; };
+		85F07E0BD05EF5059FE7C6CC /* PersistenceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23E005ACB1B5EDC865402B /* PersistenceModels.swift */; };
+		8D2B2E6E1F0F2628BCA75C54 /* CaptureInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD874931B001963D071828 /* CaptureInputTests.swift */; };
+		93646DA55B0F599CDADD86B7 /* WidgetAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05660F67D1E178301CD865C /* WidgetAssets.xcassets */; };
+		9B0A9C7542A6FC9B2FA76DCB /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 88F8E64E941F74AE57B08C4D /* AppShortcuts.xcstrings */; };
+		9BE5B5E30B59CCC4B8D89B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF254886FD87B7C542C36684 /* Assets.xcassets */; };
+		9C23714BD1CC21D8C3772A4E /* ShareExtensionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E5D806063FE0AE44BC7A49 /* ShareExtensionModel.swift */; };
+		9CA4F4EF902486B6D5E1D5CA /* ReceiptExportMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9757C87A405B3E2777C2BB5 /* ReceiptExportMapper.swift */; };
+		9CB9657D0610194B65F00CD6 /* ReceiptImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B10E4F09D6E0328A88517 /* ReceiptImageViewer.swift */; };
+		9DD9457CBF18B3860E6BB8A6 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F424EA8C4F91E200866F7C13 /* InfoPlist.xcstrings */; };
+		9E3F9C4C321CF36E44AE5753 /* PlatformImageSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72833F1FAC084504F4AC098C /* PlatformImageSupport.swift */; };
+		9FF346D63CFC3795659515EA /* AgentImportBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483997A0CD11434E6E4D82BE /* AgentImportBridge.swift */; };
+		A10B938359A06FAC1A8FE778 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 82EA741A0E0002E89549764B /* Localizable.xcstrings */; };
+		A18CCF6FE3B595FCDDD00134 /* ReceiptImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B10E4F09D6E0328A88517 /* ReceiptImageViewer.swift */; };
+		A4B19C8097BABEAA222AC33D /* OnboardingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7AB151DF5DC2893272BA37 /* OnboardingViews.swift */; };
+		A58C1A3648B41D47E8686C18 /* AgentEntryConfirmationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A04B7307F8F64FBBCC9F40 /* AgentEntryConfirmationViews.swift */; };
+		A726F7B68F7A299D09DC0A10 /* IntelliExpenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226F5F6F98034C8585CA3816 /* IntelliExpenseTests.swift */; };
+		A94A41E68914A861B5E891BD /* ConfirmedDatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CECDBC04A24137FC02922 /* ConfirmedDatePickerRow.swift */; };
+		AB1316D08714D0BD253E6F8B /* IntelliExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FAD482F476D375701E357 /* IntelliExpenseApp.swift */; };
+		AB519AAFB8BDDF7D7216A30D /* PlatformImageSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72833F1FAC084504F4AC098C /* PlatformImageSupport.swift */; };
+		AD847409B93CF07B71550ADF /* PersistenceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23E005ACB1B5EDC865402B /* PersistenceModels.swift */; };
+		AEFAA7247F6E5C1EB392559E /* ScanReceiptControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04405196C72C18C244525 /* ScanReceiptControl.swift */; };
+		B08756F177904C61E455DF44 /* ExternalCaptureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C546AF6A909C298F2183208 /* ExternalCaptureAction.swift */; };
+		B09903CD3C14FAC833581E19 /* CaptureViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5151EF664FE899F325F05114 /* CaptureViews.swift */; };
+		B15D677B73F8D9D569C34ED7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE3564B61E350AC1E9523A /* SettingsView.swift */; };
+		B1C7B876520C43C60EE8BB2F /* ScanReceiptIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F32D38E0BB2B68B69CB38F2 /* ScanReceiptIntent.swift */; };
+		B2DE6863DE40280EEA32A58E /* ScanReceiptControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C04405196C72C18C244525 /* ScanReceiptControl.swift */; };
+		B2E0B3151DDBC73BB655E3C0 /* IntelliExpenseControls.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 80472657248481E3A247F029 /* IntelliExpenseControls.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B38318DA7D4171C28A4196FE /* ConfirmedDatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48CECDBC04A24137FC02922 /* ConfirmedDatePickerRow.swift */; };
+		B50098E1FFDC66B6357DBDB0 /* ToolbarPlacementSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123D072A3941FAD324EB72E /* ToolbarPlacementSupport.swift */; };
+		B62A9E0E31F59CA8316739EB /* ExportShimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6C7C4F021ADEB15E87FDF /* ExportShimTests.swift */; };
+		BBD19796F8819BE2A9536A56 /* ReviewViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0D17420960B8EC89147D7 /* ReviewViews.swift */; };
+		BD7DF8368C31D5F30527E540 /* CategoryDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB82DA3B957B1B8468A4536 /* CategoryDisplay.swift */; };
+		C10BF76665E373D154EAA91D /* ReceiptFileIngestionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5421F2966F2EC9B0D3E856C /* ReceiptFileIngestionProcessor.swift */; };
+		C1FCAE93A5C8A588895FB168 /* MacCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AA4EBC5B7182F27029DF33 /* MacCommands.swift */; };
+		C2345136B3169774343AF8FD /* DocumentCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07846A87102B0E7E13B236D /* DocumentCameraView.swift */; };
+		C3E21B92BFEC622AF75DC157 /* DocumentCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07846A87102B0E7E13B236D /* DocumentCameraView.swift */; };
+		C473F4563A2BAFD0F757277F /* MacDesktopBehaviorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD5532C5C1848F94E44B1E /* MacDesktopBehaviorSupport.swift */; };
+		C61214F5E332FF167CDC735D /* FoundationModelReceiptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494DB684EBA557DF617B020 /* FoundationModelReceiptService.swift */; };
+		C61E51A03F1F13E292D59631 /* GroupsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD35E0D6CEDF4CF37F8022C /* GroupsViews.swift */; };
+		C7F5615BFB18B2B1856A2302 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DA99E2C54EA8CC119D8D8444 /* AppIcon.icon */; };
+		C8A5B2FE9C04965A0BA84CF0 /* ReceiptReviewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADD51BDB5A43272A0C3215 /* ReceiptReviewForm.swift */; };
+		CA1E4CD2C21D2C74DD94DFE6 /* ReceiptCapturePageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6669601E60513667E472DBA /* ReceiptCapturePageBuilder.swift */; };
+		CBA15EF4B5CCF6D51F197746 /* DeepLinkRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8DBD5A984EE934997C5C /* DeepLinkRouting.swift */; };
+		CF0D1F2FC9B8007106BED766 /* PlatformPresentationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49499121735FE4567AE44CA3 /* PlatformPresentationSupport.swift */; };
+		CF6D0C81BC7B729EBB1D0CF4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE3564B61E350AC1E9523A /* SettingsView.swift */; };
+		CFB549D1AA767B16C0822281 /* CategoryProfileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED30F066B19BD1BE9C518D30 /* CategoryProfileAppTests.swift */; };
+		D055C439DAC07ADBD011A575 /* QuickCaptureWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260537E7087B11AD05AC54A6 /* QuickCaptureWidget.swift */; };
+		D107092387D2E1353C40018D /* AppMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795642A221E1C29831DC1CAA /* AppMetadata.swift */; };
+		D2B3A02D8E78DB4D851F71C2 /* DeepLinkRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8DBD5A984EE934997C5C /* DeepLinkRouting.swift */; };
+		D7163FAC5F33E5B6F87430CB /* VisionDocumentOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4C67C1F6E6ADC1F166DA1 /* VisionDocumentOCRService.swift */; };
+		D89011D2CF07BA88CE22C3CA /* ExpenseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 87DE0AEAC989000C42BE50FD /* ExpenseCore */; };
+		D9D35E35281B4BF66F51A3EB /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DA99E2C54EA8CC119D8D8444 /* AppIcon.icon */; };
+		DD3BCF06F59247065922301E /* PDFReceiptPageRasterizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A144261AE77722F13D70225 /* PDFReceiptPageRasterizer.swift */; };
+		DEFB4D838FACB12CBC2CEFB0 /* MacDesktopBehaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960DE22C269B2FFF0401A2BC /* MacDesktopBehaviorTests.swift */; };
+		E21B71FE3DB55A93714B4A7F /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69AA2840EF41469E54CE5D /* AppServices.swift */; };
+		E299136A54B3E56B4C722018 /* OnboardingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7AB151DF5DC2893272BA37 /* OnboardingViews.swift */; };
+		E74834E77F6369F2CC1D9FCC /* DeepLinkRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8DBD5A984EE934997C5C /* DeepLinkRouting.swift */; };
+		E7DA88E22BCD616012ADA001 /* SharedReceiptInboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398D4594D88B9A21C998FFB /* SharedReceiptInboxTests.swift */; };
+		E87872A2654098D5A57F9A8E /* ReceiptCapturePageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6669601E60513667E472DBA /* ReceiptCapturePageBuilder.swift */; };
+		EA98E6E5D9163CE0806A7F99 /* ReceiptCapturePageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6669601E60513667E472DBA /* ReceiptCapturePageBuilder.swift */; };
+		EB15905CD8A12F823487C06A /* MacContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE34C2E9D5972F93B9FDC5 /* MacContentView.swift */; };
+		EBD4866F4E830EB14A6E33CB /* ShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B12F7FB41D0DF39766D9C6C /* ShareExtensionView.swift */; };
+		EFED06E85CF5F5963A860962 /* OnboardingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7AB151DF5DC2893272BA37 /* OnboardingViews.swift */; };
+		F00FFF44A8BC997691392C4C /* IntelliExpenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723AD742C23E9B23E3FD26F5 /* IntelliExpenseUITests.swift */; };
+		F0799815ED8D2D096176308A /* ReceiptFileIngestionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5421F2966F2EC9B0D3E856C /* ReceiptFileIngestionProcessor.swift */; };
+		F14B85BBFA82B7914F3CD378 /* ExpenseFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A00CBC94A4CDC8BD4279412 /* ExpenseFormatters.swift */; };
+		F53054B84EFBAE0301103B29 /* DeepLinkRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8DBD5A984EE934997C5C /* DeepLinkRouting.swift */; };
+		F6D21B07A1E2C333DDDEB55E /* MacDesktopBehaviorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD5532C5C1848F94E44B1E /* MacDesktopBehaviorSupport.swift */; };
+		F8FBFE24AA175854C5B986DD /* VisionDocumentOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF4C67C1F6E6ADC1F166DA1 /* VisionDocumentOCRService.swift */; };
+		FAD233EF4EF67439005B38A9 /* ReceiptFileIngestionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5421F2966F2EC9B0D3E856C /* ReceiptFileIngestionProcessor.swift */; };
+		FB9EBA15B6D0651D1CCF6E45 /* MacContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE34C2E9D5972F93B9FDC5 /* MacContentView.swift */; };
+		FD4D66864512AC05E65029C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E114E2314E9E5C6F1D305FF /* ContentView.swift */; };
+		FEAE02517A102482D4C9A956 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE3564B61E350AC1E9523A /* SettingsView.swift */; };
+		FEDBA21C5F60A05B29B0165F /* IntelliExpenseControlsSandbox.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F0F52B22982731427652301 /* IntelliExpenseControlsSandbox.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FEF833F5DDC4EA1CADC9BA73 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15A79C66A299BF65F5556D76 /* InfoPlist.xcstrings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B39C8F9A7427A05D83FF61A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF52B7B942C31726021E5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6B421FE60D0B3533DC2CB35;
+			remoteInfo = IntelliExpenseMac;
+		};
+		24937DE76615C93CA646F9B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF52B7B942C31726021E5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6B421FE60D0B3533DC2CB35;
+			remoteInfo = IntelliExpenseMac;
+		};
+		3D0B8A9F55950D30C4ECB429 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF52B7B942C31726021E5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9417C34726F4DCEC994D7AD;
+			remoteInfo = IntelliExpenseControlsSandbox;
+		};
+		4A828E84C221AD2367224A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF52B7B942C31726021E5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F611E0EB34B99FAE9886A42B;
+			remoteInfo = IntelliExpense;
+		};
+		7D0142CF235ACEEDB88B74A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF52B7B942C31726021E5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85701FDD94ABA01F4BE476F5;
+			remoteInfo = IntelliExpenseShare;
+		};
+		9E9E785AEDEE645B3F26E22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF52B7B942C31726021E5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10FF3F380275D8D66B19DD3;
+			remoteInfo = IntelliExpenseControls;
+		};
+		E7BEFB401C114A11667AEA0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFF52B7B942C31726021E5B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F611E0EB34B99FAE9886A42B;
+			remoteInfo = IntelliExpense;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		315CB6DE712F46D0EE0B5D82 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4689A509819AC027E8C1075B /* IntelliExpenseShare.appex in Embed Foundation Extensions */,
+				B2E0B3151DDBC73BB655E3C0 /* IntelliExpenseControls.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC3389CC2F7A9A885867E19 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FEDBA21C5F60A05B29B0165F /* IntelliExpenseControlsSandbox.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		006BB5C523B5965EE79E00AD /* Info.macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.macOS.plist; sourceTree = "<group>"; };
+		00CE34C2E9D5972F93B9FDC5 /* MacContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacContentView.swift; sourceTree = "<group>"; };
+		039482CD570E0FB0D02DD51E /* IntelliExpenseShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = IntelliExpenseShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B12F7FB41D0DF39766D9C6C /* ShareExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareExtensionView.swift; sourceTree = "<group>"; };
+		0F32D38E0BB2B68B69CB38F2 /* ScanReceiptIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanReceiptIntent.swift; sourceTree = "<group>"; };
+		0F46B4A0A9ECBEEF3BCD6EF5 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		15A79C66A299BF65F5556D76 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		17715C1376ADAE3EC9663EC7 /* IntelliExpenseShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntelliExpenseShare.entitlements; sourceTree = "<group>"; };
+		17D177089721163B73B8C9CB /* IntelliExpenseMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliExpenseMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1882341E5028532E8C229556 /* ExpenseCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ExpenseCore; path = ExpenseCore; sourceTree = SOURCE_ROOT; };
+		226F5F6F98034C8585CA3816 /* IntelliExpenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliExpenseTests.swift; sourceTree = "<group>"; };
+		2310EDD37A2CD4E0B9921F57 /* ReceiptReviewFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptReviewFormTests.swift; sourceTree = "<group>"; };
+		260537E7087B11AD05AC54A6 /* QuickCaptureWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCaptureWidget.swift; sourceTree = "<group>"; };
+		2ADAA4132A8FDF8E1CE013CA /* ReceiptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptStore.swift; sourceTree = "<group>"; };
+		2E114E2314E9E5C6F1D305FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2E69AA2840EF41469E54CE5D /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		320BC5C802DA79FE0978E1C7 /* FolderUserFacingRenameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderUserFacingRenameTests.swift; sourceTree = "<group>"; };
+		360E5A841DC777912C034104 /* ReceiptServiceWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptServiceWrapperTests.swift; sourceTree = "<group>"; };
+		3903787CA9AF27EBAC6F60F1 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		3CEDFD91FAED6C1BA35A3CB2 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		404621EC2436A1DAC90FF8FC /* SandboxSeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxSeedData.swift; sourceTree = "<group>"; };
+		483997A0CD11434E6E4D82BE /* AgentImportBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentImportBridge.swift; sourceTree = "<group>"; };
+		49499121735FE4567AE44CA3 /* PlatformPresentationSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformPresentationSupport.swift; sourceTree = "<group>"; };
+		4A75F8E1BF8E1FE923012095 /* IntelliExpenseMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliExpenseMacUITests.swift; sourceTree = "<group>"; };
+		4AF4C67C1F6E6ADC1F166DA1 /* VisionDocumentOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDocumentOCRService.swift; sourceTree = "<group>"; };
+		4DBE4D7FD4C20551B9109D82 /* ReceiptProcessingPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptProcessingPipeline.swift; sourceTree = "<group>"; };
+		5151EF664FE899F325F05114 /* CaptureViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViews.swift; sourceTree = "<group>"; };
+		51ADD51BDB5A43272A0C3215 /* ReceiptReviewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptReviewForm.swift; sourceTree = "<group>"; };
+		53182ABE98696665A13B27ED /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		57AA741120E014124F685472 /* SharedReceiptInboxDrainProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedReceiptInboxDrainProcessor.swift; sourceTree = "<group>"; };
+		5BD35E0D6CEDF4CF37F8022C /* GroupsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViews.swift; sourceTree = "<group>"; };
+		5F23E005ACB1B5EDC865402B /* PersistenceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceModels.swift; sourceTree = "<group>"; };
+		6243AEBC6566A1536421FDEA /* IntelliExpenseSandbox.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = IntelliExpenseSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E467367B52C2597FFBD234 /* SharedReceiptInbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedReceiptInbox.swift; sourceTree = "<group>"; };
+		63C0D17420960B8EC89147D7 /* ReviewViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViews.swift; sourceTree = "<group>"; };
+		6494DB684EBA557DF617B020 /* FoundationModelReceiptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationModelReceiptService.swift; sourceTree = "<group>"; };
+		64FE97C8EF963F14CDEF9CFE /* IntelliExpense.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = IntelliExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C553E15F40E09F5BF49577 /* ScanReceiptIntentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanReceiptIntentTests.swift; sourceTree = "<group>"; };
+		6D3E03430951D10D347FFCC6 /* MacVisualPolishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacVisualPolishTests.swift; sourceTree = "<group>"; };
+		723AD742C23E9B23E3FD26F5 /* IntelliExpenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliExpenseUITests.swift; sourceTree = "<group>"; };
+		72833F1FAC084504F4AC098C /* PlatformImageSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformImageSupport.swift; sourceTree = "<group>"; };
+		74A04B7307F8F64FBBCC9F40 /* AgentEntryConfirmationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEntryConfirmationViews.swift; sourceTree = "<group>"; };
+		75D942A6B7799402C9F661D3 /* IntelliExpenseTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = IntelliExpenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C04405196C72C18C244525 /* ScanReceiptControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanReceiptControl.swift; sourceTree = "<group>"; };
+		76E6C1ED7E3219FE1C83550A /* CapturePipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePipelineTests.swift; sourceTree = "<group>"; };
+		78DBD11DDDC342797BF26B40 /* ReceiptsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsViews.swift; sourceTree = "<group>"; };
+		795642A221E1C29831DC1CAA /* AppMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadata.swift; sourceTree = "<group>"; };
+		7C02420C7FEF2BEF12554F38 /* CategoryComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryComposer.swift; sourceTree = "<group>"; };
+		80472657248481E3A247F029 /* IntelliExpenseControls.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = IntelliExpenseControls.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		82AD874931B001963D071828 /* CaptureInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureInputTests.swift; sourceTree = "<group>"; };
+		82EA741A0E0002E89549764B /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		88F8E64E941F74AE57B08C4D /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
+		89076A948395A5F38878036D /* IntelliExpenseMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntelliExpenseMac.entitlements; sourceTree = "<group>"; };
+		8C546AF6A909C298F2183208 /* ExternalCaptureAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalCaptureAction.swift; sourceTree = "<group>"; };
+		8F0F52B22982731427652301 /* IntelliExpenseControlsSandbox.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = IntelliExpenseControlsSandbox.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9398D4594D88B9A21C998FFB /* SharedReceiptInboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedReceiptInboxTests.swift; sourceTree = "<group>"; };
+		960DE22C269B2FFF0401A2BC /* MacDesktopBehaviorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDesktopBehaviorTests.swift; sourceTree = "<group>"; };
+		99B009F8DDAA868D7213344E /* DeepLinkRoutingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkRoutingTests.swift; sourceTree = "<group>"; };
+		9A00CBC94A4CDC8BD4279412 /* ExpenseFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseFormatters.swift; sourceTree = "<group>"; };
+		9A144261AE77722F13D70225 /* PDFReceiptPageRasterizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReceiptPageRasterizer.swift; sourceTree = "<group>"; };
+		9CF33DCD65CC79558CE70E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A3E5D806063FE0AE44BC7A49 /* ShareExtensionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareExtensionModel.swift; sourceTree = "<group>"; };
+		A4CE3564B61E350AC1E9523A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A55FC091207BC97AE9A77CEE /* IntelliExpenseMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliExpenseMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6669601E60513667E472DBA /* ReceiptCapturePageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCapturePageBuilder.swift; sourceTree = "<group>"; };
+		AC7AB151DF5DC2893272BA37 /* OnboardingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViews.swift; sourceTree = "<group>"; };
+		B07846A87102B0E7E13B236D /* DocumentCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCameraView.swift; sourceTree = "<group>"; };
+		BACD5532C5C1848F94E44B1E /* MacDesktopBehaviorSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDesktopBehaviorSupport.swift; sourceTree = "<group>"; };
+		C31777C41519520DFEB0D6FA /* PersistenceStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStack.swift; sourceTree = "<group>"; };
+		C40FAD482F476D375701E357 /* IntelliExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliExpenseApp.swift; sourceTree = "<group>"; };
+		C5421F2966F2EC9B0D3E856C /* ReceiptFileIngestionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptFileIngestionProcessor.swift; sourceTree = "<group>"; };
+		C7B7DCB10B0B95D203E236E2 /* MacDoubleClickActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDoubleClickActionView.swift; sourceTree = "<group>"; };
+		C9757C87A405B3E2777C2BB5 /* ReceiptExportMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptExportMapper.swift; sourceTree = "<group>"; };
+		CC714914821DCE860269CB2B /* IntelliExpense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntelliExpense.entitlements; sourceTree = "<group>"; };
+		CDC1B66A0F8D20751C03FEC5 /* IntelliExpenseMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliExpenseMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D141D212E1680845986C8315 /* IntelliExpenseUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = IntelliExpenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA99E2C54EA8CC119D8D8444 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		DBB82DA3B957B1B8468A4536 /* CategoryDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDisplay.swift; sourceTree = "<group>"; };
+		E05660F67D1E178301CD865C /* WidgetAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WidgetAssets.xcassets; sourceTree = "<group>"; };
+		E123D072A3941FAD324EB72E /* ToolbarPlacementSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarPlacementSupport.swift; sourceTree = "<group>"; };
+		E2A5D92DFA9D52DAD210A03E /* MacReceiptDetailPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacReceiptDetailPane.swift; sourceTree = "<group>"; };
+		E48CECDBC04A24137FC02922 /* ConfirmedDatePickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedDatePickerRow.swift; sourceTree = "<group>"; };
+		E62B5E6455AB3E2D1F1B676D /* AgentImportBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentImportBridgeTests.swift; sourceTree = "<group>"; };
+		E735E4AA694FA33E2B01CEE2 /* TripDetailBreakdownRowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailBreakdownRowsTests.swift; sourceTree = "<group>"; };
+		ED30F066B19BD1BE9C518D30 /* CategoryProfileAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProfileAppTests.swift; sourceTree = "<group>"; };
+		EEAD8DBD5A984EE934997C5C /* DeepLinkRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkRouting.swift; sourceTree = "<group>"; };
+		EFB53F0E8966C83309BB8028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F0D3740684E776B77E562448 /* ShareExtensionHandoffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareExtensionHandoffTests.swift; sourceTree = "<group>"; };
+		F3AA4EBC5B7182F27029DF33 /* MacCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCommands.swift; sourceTree = "<group>"; };
+		F424EA8C4F91E200866F7C13 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		FC1B10E4F09D6E0328A88517 /* ReceiptImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptImageViewer.swift; sourceTree = "<group>"; };
+		FCF6C7C4F021ADEB15E87FDF /* ExportShimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportShimTests.swift; sourceTree = "<group>"; };
+		FF254886FD87B7C542C36684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637B74778D7C917900533C67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ABE3BE25034E25956A2DA58 /* ExpenseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92F3BCF4EA8A2B5BF7583D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725E8D916904E09CCC3D0822 /* ExpenseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9FBA91EAA7219BA38A61ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89011D2CF07BA88CE22C3CA /* ExpenseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0182E21A66F1E76D1576CE04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64FE97C8EF963F14CDEF9CFE /* IntelliExpense.app */,
+				80472657248481E3A247F029 /* IntelliExpenseControls.appex */,
+				8F0F52B22982731427652301 /* IntelliExpenseControlsSandbox.appex */,
+				17D177089721163B73B8C9CB /* IntelliExpenseMac.app */,
+				CDC1B66A0F8D20751C03FEC5 /* IntelliExpenseMacTests.xctest */,
+				A55FC091207BC97AE9A77CEE /* IntelliExpenseMacUITests.xctest */,
+				6243AEBC6566A1536421FDEA /* IntelliExpenseSandbox.app */,
+				039482CD570E0FB0D02DD51E /* IntelliExpenseShare.appex */,
+				75D942A6B7799402C9F661D3 /* IntelliExpenseTests.xctest */,
+				D141D212E1680845986C8315 /* IntelliExpenseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AFD5EFD3DCCA45E4A20D63 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				5F23E005ACB1B5EDC865402B /* PersistenceModels.swift */,
+				C31777C41519520DFEB0D6FA /* PersistenceStack.swift */,
+				2ADAA4132A8FDF8E1CE013CA /* ReceiptStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		08BD3BA22A7E43B5B2593AD7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				74A04B7307F8F64FBBCC9F40 /* AgentEntryConfirmationViews.swift */,
+				5151EF664FE899F325F05114 /* CaptureViews.swift */,
+				7C02420C7FEF2BEF12554F38 /* CategoryComposer.swift */,
+				DBB82DA3B957B1B8468A4536 /* CategoryDisplay.swift */,
+				E48CECDBC04A24137FC02922 /* ConfirmedDatePickerRow.swift */,
+				9A00CBC94A4CDC8BD4279412 /* ExpenseFormatters.swift */,
+				5BD35E0D6CEDF4CF37F8022C /* GroupsViews.swift */,
+				AC7AB151DF5DC2893272BA37 /* OnboardingViews.swift */,
+				72833F1FAC084504F4AC098C /* PlatformImageSupport.swift */,
+				49499121735FE4567AE44CA3 /* PlatformPresentationSupport.swift */,
+				FC1B10E4F09D6E0328A88517 /* ReceiptImageViewer.swift */,
+				78DBD11DDDC342797BF26B40 /* ReceiptsViews.swift */,
+				63C0D17420960B8EC89147D7 /* ReviewViews.swift */,
+				A4CE3564B61E350AC1E9523A /* SettingsView.swift */,
+				3903787CA9AF27EBAC6F60F1 /* ShareSheet.swift */,
+				E123D072A3941FAD324EB72E /* ToolbarPlacementSupport.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		121CF5719ABA533C8765562D /* IntelliExpenseShare */ = {
+			isa = PBXGroup;
+			children = (
+				9CF33DCD65CC79558CE70E16 /* Info.plist */,
+				17715C1376ADAE3EC9663EC7 /* IntelliExpenseShare.entitlements */,
+				A3E5D806063FE0AE44BC7A49 /* ShareExtensionModel.swift */,
+				0B12F7FB41D0DF39766D9C6C /* ShareExtensionView.swift */,
+				3CEDFD91FAED6C1BA35A3CB2 /* ShareViewController.swift */,
+				7A3F3A736832CA57404D4491 /* Resources */,
+			);
+			path = IntelliExpenseShare;
+			sourceTree = "<group>";
+		};
+		1ECF5392C9D927D3B9CB4B26 /* IntelliExpenseControls */ = {
+			isa = PBXGroup;
+			children = (
+				260537E7087B11AD05AC54A6 /* QuickCaptureWidget.swift */,
+				76C04405196C72C18C244525 /* ScanReceiptControl.swift */,
+				E05660F67D1E178301CD865C /* WidgetAssets.xcassets */,
+			);
+			path = IntelliExpenseControls;
+			sourceTree = "<group>";
+		};
+		2D3133273038A1EBF86B7EDF /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				F3AA4EBC5B7182F27029DF33 /* MacCommands.swift */,
+				00CE34C2E9D5972F93B9FDC5 /* MacContentView.swift */,
+				BACD5532C5C1848F94E44B1E /* MacDesktopBehaviorSupport.swift */,
+				C7B7DCB10B0B95D203E236E2 /* MacDoubleClickActionView.swift */,
+				E2A5D92DFA9D52DAD210A03E /* MacReceiptDetailPane.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		3334391A9DC8B09D0971A588 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1882341E5028532E8C229556 /* ExpenseCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		49DF0B7263B342C723AA6167 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2E69AA2840EF41469E54CE5D /* AppServices.swift */,
+				EEAD8DBD5A984EE934997C5C /* DeepLinkRouting.swift */,
+				8C546AF6A909C298F2183208 /* ExternalCaptureAction.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		623C37518EC936597AA48A1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA99E2C54EA8CC119D8D8444 /* AppIcon.icon */,
+				88F8E64E941F74AE57B08C4D /* AppShortcuts.xcstrings */,
+				FF254886FD87B7C542C36684 /* Assets.xcassets */,
+				15A79C66A299BF65F5556D76 /* InfoPlist.xcstrings */,
+				82EA741A0E0002E89549764B /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C6AF286BF93C9DB93DD518E /* AgentImport */ = {
+			isa = PBXGroup;
+			children = (
+				483997A0CD11434E6E4D82BE /* AgentImportBridge.swift */,
+			);
+			path = AgentImport;
+			sourceTree = "<group>";
+		};
+		72B12D99C7E932F3E41A4F01 /* AppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				0F32D38E0BB2B68B69CB38F2 /* ScanReceiptIntent.swift */,
+			);
+			path = AppIntents;
+			sourceTree = "<group>";
+		};
+		7A3F3A736832CA57404D4491 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F424EA8C4F91E200866F7C13 /* InfoPlist.xcstrings */,
+				53182ABE98696665A13B27ED /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89B6E8723F87382CE7ECC22F /* IntelliExpenseMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A75F8E1BF8E1FE923012095 /* IntelliExpenseMacUITests.swift */,
+			);
+			path = IntelliExpenseMacUITests;
+			sourceTree = "<group>";
+		};
+		8FA8A5A661D32050738AC46F /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				C9757C87A405B3E2777C2BB5 /* ReceiptExportMapper.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		9CD699EF989A2C0F1663E17A /* IntelliExpenseMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				960DE22C269B2FFF0401A2BC /* MacDesktopBehaviorTests.swift */,
+			);
+			path = IntelliExpenseMacTests;
+			sourceTree = "<group>";
+		};
+		9E2E320F05A2DC58869068CD /* IntelliExpenseTests */ = {
+			isa = PBXGroup;
+			children = (
+				E62B5E6455AB3E2D1F1B676D /* AgentImportBridgeTests.swift */,
+				82AD874931B001963D071828 /* CaptureInputTests.swift */,
+				76E6C1ED7E3219FE1C83550A /* CapturePipelineTests.swift */,
+				ED30F066B19BD1BE9C518D30 /* CategoryProfileAppTests.swift */,
+				99B009F8DDAA868D7213344E /* DeepLinkRoutingTests.swift */,
+				FCF6C7C4F021ADEB15E87FDF /* ExportShimTests.swift */,
+				320BC5C802DA79FE0978E1C7 /* FolderUserFacingRenameTests.swift */,
+				226F5F6F98034C8585CA3816 /* IntelliExpenseTests.swift */,
+				6D3E03430951D10D347FFCC6 /* MacVisualPolishTests.swift */,
+				0F46B4A0A9ECBEEF3BCD6EF5 /* PersistenceTests.swift */,
+				2310EDD37A2CD4E0B9921F57 /* ReceiptReviewFormTests.swift */,
+				360E5A841DC777912C034104 /* ReceiptServiceWrapperTests.swift */,
+				66C553E15F40E09F5BF49577 /* ScanReceiptIntentTests.swift */,
+				9398D4594D88B9A21C998FFB /* SharedReceiptInboxTests.swift */,
+				F0D3740684E776B77E562448 /* ShareExtensionHandoffTests.swift */,
+				E735E4AA694FA33E2B01CEE2 /* TripDetailBreakdownRowsTests.swift */,
+			);
+			path = IntelliExpenseTests;
+			sourceTree = "<group>";
+		};
+		9E60DE52224C452B698A75B1 /* IntelliExpenseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				723AD742C23E9B23E3FD26F5 /* IntelliExpenseUITests.swift */,
+			);
+			path = IntelliExpenseUITests;
+			sourceTree = "<group>";
+		};
+		B12D4C6DED02216BC0D6D603 /* IntelliExpense */ = {
+			isa = PBXGroup;
+			children = (
+				795642A221E1C29831DC1CAA /* AppMetadata.swift */,
+				2E114E2314E9E5C6F1D305FF /* ContentView.swift */,
+				006BB5C523B5965EE79E00AD /* Info.macOS.plist */,
+				EFB53F0E8966C83309BB8028 /* Info.plist */,
+				CC714914821DCE860269CB2B /* IntelliExpense.entitlements */,
+				C40FAD482F476D375701E357 /* IntelliExpenseApp.swift */,
+				89076A948395A5F38878036D /* IntelliExpenseMac.entitlements */,
+				404621EC2436A1DAC90FF8FC /* SandboxSeedData.swift */,
+				6C6AF286BF93C9DB93DD518E /* AgentImport */,
+				49DF0B7263B342C723AA6167 /* App */,
+				72B12D99C7E932F3E41A4F01 /* AppIntents */,
+				C6533A1FD1C582024CFBB9C3 /* Capture */,
+				8FA8A5A661D32050738AC46F /* Export */,
+				2D3133273038A1EBF86B7EDF /* Mac */,
+				07AFD5EFD3DCCA45E4A20D63 /* Persistence */,
+				623C37518EC936597AA48A1E /* Resources */,
+				D190EC1C0D31356FF11F6DBE /* Review */,
+				08BD3BA22A7E43B5B2593AD7 /* UI */,
+			);
+			path = IntelliExpense;
+			sourceTree = "<group>";
+		};
+		C6533A1FD1C582024CFBB9C3 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				B07846A87102B0E7E13B236D /* DocumentCameraView.swift */,
+				6494DB684EBA557DF617B020 /* FoundationModelReceiptService.swift */,
+				9A144261AE77722F13D70225 /* PDFReceiptPageRasterizer.swift */,
+				A6669601E60513667E472DBA /* ReceiptCapturePageBuilder.swift */,
+				C5421F2966F2EC9B0D3E856C /* ReceiptFileIngestionProcessor.swift */,
+				4DBE4D7FD4C20551B9109D82 /* ReceiptProcessingPipeline.swift */,
+				62E467367B52C2597FFBD234 /* SharedReceiptInbox.swift */,
+				57AA741120E014124F685472 /* SharedReceiptInboxDrainProcessor.swift */,
+				4AF4C67C1F6E6ADC1F166DA1 /* VisionDocumentOCRService.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		D190EC1C0D31356FF11F6DBE /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				51ADD51BDB5A43272A0C3215 /* ReceiptReviewForm.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		EA5A55689CC5744835D2075E = {
+			isa = PBXGroup;
+			children = (
+				B12D4C6DED02216BC0D6D603 /* IntelliExpense */,
+				1ECF5392C9D927D3B9CB4B26 /* IntelliExpenseControls */,
+				9CD699EF989A2C0F1663E17A /* IntelliExpenseMacTests */,
+				89B6E8723F87382CE7ECC22F /* IntelliExpenseMacUITests */,
+				121CF5719ABA533C8765562D /* IntelliExpenseShare */,
+				9E2E320F05A2DC58869068CD /* IntelliExpenseTests */,
+				9E60DE52224C452B698A75B1 /* IntelliExpenseUITests */,
+				3334391A9DC8B09D0971A588 /* Packages */,
+				0182E21A66F1E76D1576CE04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85701FDD94ABA01F4BE476F5 /* IntelliExpenseShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CCE0F8720E3B2719DE5025 /* Build configuration list for PBXNativeTarget "IntelliExpenseShare" */;
+			buildPhases = (
+				B20B1EC390EBDA75C64CBDC2 /* Sources */,
+				449A882D95E7E1938F1E919F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelliExpenseShare;
+			packageProductDependencies = (
+			);
+			productName = IntelliExpenseShare;
+			productReference = 039482CD570E0FB0D02DD51E /* IntelliExpenseShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A19F73BEB9A624D2C908A45F /* IntelliExpenseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25657F2B0B033AEE88639CA3 /* Build configuration list for PBXNativeTarget "IntelliExpenseUITests" */;
+			buildPhases = (
+				2E9A8E326B768AF7959ADB47 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				967B91300C810D58E1A20162 /* PBXTargetDependency */,
+			);
+			name = IntelliExpenseUITests;
+			packageProductDependencies = (
+			);
+			productName = IntelliExpenseUITests;
+			productReference = D141D212E1680845986C8315 /* IntelliExpenseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B357E257F707E77C87E409C2 /* IntelliExpenseMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA28AA9A5AB3546CBEC2A736 /* Build configuration list for PBXNativeTarget "IntelliExpenseMacTests" */;
+			buildPhases = (
+				3CFC535DE097574F4E4A13FD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD068CDE3FA872312B0ED078 /* PBXTargetDependency */,
+			);
+			name = IntelliExpenseMacTests;
+			packageProductDependencies = (
+			);
+			productName = IntelliExpenseMacTests;
+			productReference = CDC1B66A0F8D20751C03FEC5 /* IntelliExpenseMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9417C34726F4DCEC994D7AD /* IntelliExpenseControlsSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C2C36D4B149905D1E2628B9 /* Build configuration list for PBXNativeTarget "IntelliExpenseControlsSandbox" */;
+			buildPhases = (
+				4B90EC604FDC13DEAFA68544 /* Sources */,
+				44BB8D76D9B471043D40ED4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelliExpenseControlsSandbox;
+			packageProductDependencies = (
+			);
+			productName = IntelliExpenseControlsSandbox;
+			productReference = 8F0F52B22982731427652301 /* IntelliExpenseControlsSandbox.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C812389A80F07BBAA4C93F8E /* IntelliExpenseSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66F5681635435FB4C376259 /* Build configuration list for PBXNativeTarget "IntelliExpenseSandbox" */;
+			buildPhases = (
+				F3732CA96256FBC955227D45 /* Sources */,
+				63733B882D6B145BC35F8FBD /* Resources */,
+				C92F3BCF4EA8A2B5BF7583D7 /* Frameworks */,
+				AEC3389CC2F7A9A885867E19 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463B18BB8EAF6AB0DFB0B6F6 /* PBXTargetDependency */,
+			);
+			name = IntelliExpenseSandbox;
+			packageProductDependencies = (
+				31E0F2D862B883951212816C /* ExpenseCore */,
+			);
+			productName = IntelliExpenseSandbox;
+			productReference = 6243AEBC6566A1536421FDEA /* IntelliExpenseSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA193EE158CB6EC35190512C /* IntelliExpenseMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76EBC3330CCD6221BCDB583B /* Build configuration list for PBXNativeTarget "IntelliExpenseMacUITests" */;
+			buildPhases = (
+				4481765B349C316C2C8E8340 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF8927382F3BE6F75BD9E59B /* PBXTargetDependency */,
+			);
+			name = IntelliExpenseMacUITests;
+			packageProductDependencies = (
+			);
+			productName = IntelliExpenseMacUITests;
+			productReference = A55FC091207BC97AE9A77CEE /* IntelliExpenseMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E10FF3F380275D8D66B19DD3 /* IntelliExpenseControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541A0A6E03F77E10B6EA4A20 /* Build configuration list for PBXNativeTarget "IntelliExpenseControls" */;
+			buildPhases = (
+				2134BD0DCFA563A1DECE7651 /* Sources */,
+				3B14B39B42EAC20A5BA83497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelliExpenseControls;
+			packageProductDependencies = (
+			);
+			productName = IntelliExpenseControls;
+			productReference = 80472657248481E3A247F029 /* IntelliExpenseControls.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F07C86DE2A8CE7BC1A44C0E6 /* IntelliExpenseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3A4F89D0BE7D8DD6CAA6D7 /* Build configuration list for PBXNativeTarget "IntelliExpenseTests" */;
+			buildPhases = (
+				D9E4A338765F51ED9266F53F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4794630D6FA88CDE9F56898 /* PBXTargetDependency */,
+			);
+			name = IntelliExpenseTests;
+			packageProductDependencies = (
+			);
+			productName = IntelliExpenseTests;
+			productReference = 75D942A6B7799402C9F661D3 /* IntelliExpenseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F611E0EB34B99FAE9886A42B /* IntelliExpense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F4D98080ACEA5BEFD2FFC9 /* Build configuration list for PBXNativeTarget "IntelliExpense" */;
+			buildPhases = (
+				2EA150ADE11D21C2E6A417C1 /* Sources */,
+				A1467F346683A2684C07B6C3 /* Resources */,
+				E9FBA91EAA7219BA38A61ECD /* Frameworks */,
+				315CB6DE712F46D0EE0B5D82 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82BD312AFA785E256C08E1ED /* PBXTargetDependency */,
+				321C040006D87230BE7CAECB /* PBXTargetDependency */,
+			);
+			name = IntelliExpense;
+			packageProductDependencies = (
+				87DE0AEAC989000C42BE50FD /* ExpenseCore */,
+			);
+			productName = IntelliExpense;
+			productReference = 64FE97C8EF963F14CDEF9CFE /* IntelliExpense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6B421FE60D0B3533DC2CB35 /* IntelliExpenseMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C80C1B678D6CDB0C9383CB6A /* Build configuration list for PBXNativeTarget "IntelliExpenseMac" */;
+			buildPhases = (
+				82B33618DF6617FADD34F141 /* Sources */,
+				A48AC19DF2A9AD8BD321B8E7 /* Resources */,
+				637B74778D7C917900533C67 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelliExpenseMac;
+			packageProductDependencies = (
+				FC9D6DE7F040F9E2E8B81776 /* ExpenseCore */,
+			);
+			productName = IntelliExpenseMac;
+			productReference = 17D177089721163B73B8C9CB /* IntelliExpenseMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFF52B7B942C31726021E5B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					85701FDD94ABA01F4BE476F5 = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+					};
+					A19F73BEB9A624D2C908A45F = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = F611E0EB34B99FAE9886A42B;
+					};
+					B357E257F707E77C87E409C2 = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+						ProvisioningStyle = Automatic;
+					};
+					B9417C34726F4DCEC994D7AD = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+						ProvisioningStyle = Automatic;
+					};
+					C812389A80F07BBAA4C93F8E = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+						ProvisioningStyle = Automatic;
+					};
+					CA193EE158CB6EC35190512C = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+						ProvisioningStyle = Automatic;
+						TestTargetID = F6B421FE60D0B3533DC2CB35;
+					};
+					E10FF3F380275D8D66B19DD3 = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+					};
+					F07C86DE2A8CE7BC1A44C0E6 = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+						ProvisioningStyle = Automatic;
+					};
+					F611E0EB34B99FAE9886A42B = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+					};
+					F6B421FE60D0B3533DC2CB35 = {
+						DevelopmentTeam = "$(INTELLI_TEAM_ID)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5B4F2123592ABF28A4C1E2F3 /* Build configuration list for PBXProject "IntelliExpense" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EA5A55689CC5744835D2075E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8507D8FB7809F382154F7C3D /* XCLocalSwiftPackageReference "ExpenseCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0182E21A66F1E76D1576CE04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F611E0EB34B99FAE9886A42B /* IntelliExpense */,
+				E10FF3F380275D8D66B19DD3 /* IntelliExpenseControls */,
+				B9417C34726F4DCEC994D7AD /* IntelliExpenseControlsSandbox */,
+				F6B421FE60D0B3533DC2CB35 /* IntelliExpenseMac */,
+				B357E257F707E77C87E409C2 /* IntelliExpenseMacTests */,
+				CA193EE158CB6EC35190512C /* IntelliExpenseMacUITests */,
+				C812389A80F07BBAA4C93F8E /* IntelliExpenseSandbox */,
+				85701FDD94ABA01F4BE476F5 /* IntelliExpenseShare */,
+				F07C86DE2A8CE7BC1A44C0E6 /* IntelliExpenseTests */,
+				A19F73BEB9A624D2C908A45F /* IntelliExpenseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B14B39B42EAC20A5BA83497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93646DA55B0F599CDADD86B7 /* WidgetAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449A882D95E7E1938F1E919F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DD9457CBF18B3860E6BB8A6 /* InfoPlist.xcstrings in Resources */,
+				0B844FAE56BCD701D90E0FA2 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BB8D76D9B471043D40ED4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166F055D63CF673464791F6F /* WidgetAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63733B882D6B145BC35F8FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D35E35281B4BF66F51A3EB /* AppIcon.icon in Resources */,
+				72F5F9025BD7494336147CBF /* AppShortcuts.xcstrings in Resources */,
+				4383C4305EB81E04BE35F5D6 /* Assets.xcassets in Resources */,
+				103EA576A0DBA8629446A26E /* InfoPlist.xcstrings in Resources */,
+				A10B938359A06FAC1A8FE778 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1467F346683A2684C07B6C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FAA1EACA5EA162933BCEAE /* AppIcon.icon in Resources */,
+				2DCD51EF6981F6AF95D190EF /* AppShortcuts.xcstrings in Resources */,
+				9BE5B5E30B59CCC4B8D89B5A /* Assets.xcassets in Resources */,
+				FEF833F5DDC4EA1CADC9BA73 /* InfoPlist.xcstrings in Resources */,
+				6A293E8822173415FCFC9CE6 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48AC19DF2A9AD8BD321B8E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F5615BFB18B2B1856A2302 /* AppIcon.icon in Resources */,
+				9B0A9C7542A6FC9B2FA76DCB /* AppShortcuts.xcstrings in Resources */,
+				54ED5573AEAD7F5C9DA2A0EB /* Assets.xcassets in Resources */,
+				0E28053CF3D198E87A967306 /* InfoPlist.xcstrings in Resources */,
+				63E8EBC24B8B246DB440DA06 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2134BD0DCFA563A1DECE7651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53FE0C528BA8CAB0EBC24BCD /* DeepLinkRouting.swift in Sources */,
+				D055C439DAC07ADBD011A575 /* QuickCaptureWidget.swift in Sources */,
+				B2DE6863DE40280EEA32A58E /* ScanReceiptControl.swift in Sources */,
+				B1C7B876520C43C60EE8BB2F /* ScanReceiptIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9A8E326B768AF7959ADB47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00FFF44A8BC997691392C4C /* IntelliExpenseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA150ADE11D21C2E6A417C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B13BE664D91D0CDD12447B /* AgentEntryConfirmationViews.swift in Sources */,
+				03BBBA85ED370E12012D460A /* AgentImportBridge.swift in Sources */,
+				3A0AE2BB831DB47DAC44FCAA /* AppMetadata.swift in Sources */,
+				E21B71FE3DB55A93714B4A7F /* AppServices.swift in Sources */,
+				73E590315B6B36200AE6DF1D /* CaptureViews.swift in Sources */,
+				41884C0E412F29D04AE0E573 /* CategoryComposer.swift in Sources */,
+				5AFB4EB7DEF29B75DA48D952 /* CategoryDisplay.swift in Sources */,
+				B38318DA7D4171C28A4196FE /* ConfirmedDatePickerRow.swift in Sources */,
+				FD4D66864512AC05E65029C2 /* ContentView.swift in Sources */,
+				CBA15EF4B5CCF6D51F197746 /* DeepLinkRouting.swift in Sources */,
+				72A999EBAA96C53F35B0EA10 /* DocumentCameraView.swift in Sources */,
+				3365F56A7F0B484A2ADDFBDF /* ExpenseFormatters.swift in Sources */,
+				568F1EED4C0BD50E210926EF /* ExternalCaptureAction.swift in Sources */,
+				744E37D5C57A0CB3F4CCE4FC /* FoundationModelReceiptService.swift in Sources */,
+				3C1D47D4D99F38BF4E177F66 /* GroupsViews.swift in Sources */,
+				AB1316D08714D0BD253E6F8B /* IntelliExpenseApp.swift in Sources */,
+				433D9B35403DEFE35E778229 /* MacCommands.swift in Sources */,
+				FB9EBA15B6D0651D1CCF6E45 /* MacContentView.swift in Sources */,
+				C473F4563A2BAFD0F757277F /* MacDesktopBehaviorSupport.swift in Sources */,
+				53EE46B5035FD743DE547B8F /* MacDoubleClickActionView.swift in Sources */,
+				06DF0C762582BA60D76DB381 /* MacReceiptDetailPane.swift in Sources */,
+				A4B19C8097BABEAA222AC33D /* OnboardingViews.swift in Sources */,
+				1F57990F28C51909C313AF96 /* PDFReceiptPageRasterizer.swift in Sources */,
+				85F07E0BD05EF5059FE7C6CC /* PersistenceModels.swift in Sources */,
+				04D7729879CE8391E59AFB89 /* PersistenceStack.swift in Sources */,
+				2A8D021C10112633B7EE3B5B /* PlatformImageSupport.swift in Sources */,
+				CF0D1F2FC9B8007106BED766 /* PlatformPresentationSupport.swift in Sources */,
+				E87872A2654098D5A57F9A8E /* ReceiptCapturePageBuilder.swift in Sources */,
+				17148B353B3E8CE986F22FE3 /* ReceiptExportMapper.swift in Sources */,
+				C10BF76665E373D154EAA91D /* ReceiptFileIngestionProcessor.swift in Sources */,
+				78AC7BE4B0AE34568A1FD53C /* ReceiptImageViewer.swift in Sources */,
+				6B7E556AF03783A84AAA07E3 /* ReceiptProcessingPipeline.swift in Sources */,
+				C8A5B2FE9C04965A0BA84CF0 /* ReceiptReviewForm.swift in Sources */,
+				460AEEC4752F12F35618B92D /* ReceiptStore.swift in Sources */,
+				7FE32A91AFA2AEBA1915B9F8 /* ReceiptsViews.swift in Sources */,
+				18B34460CB5313FD0FB5DBB5 /* ReviewViews.swift in Sources */,
+				68C1B46EE7275126EFD291EE /* SandboxSeedData.swift in Sources */,
+				6552A574EB7F382896A7F2EF /* ScanReceiptIntent.swift in Sources */,
+				B15D677B73F8D9D569C34ED7 /* SettingsView.swift in Sources */,
+				423C9E26CEA2633F4140B83A /* ShareSheet.swift in Sources */,
+				276B2B84BC51D16AA555E888 /* SharedReceiptInbox.swift in Sources */,
+				096AC52A45BA7F864FE472EF /* SharedReceiptInboxDrainProcessor.swift in Sources */,
+				5119412D1F0874B249A4A5E8 /* ToolbarPlacementSupport.swift in Sources */,
+				D7163FAC5F33E5B6F87430CB /* VisionDocumentOCRService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CFC535DE097574F4E4A13FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFB4D838FACB12CBC2CEFB0 /* MacDesktopBehaviorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4481765B349C316C2C8E8340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087654F7E3C528CC574D7210 /* IntelliExpenseMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B90EC604FDC13DEAFA68544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53054B84EFBAE0301103B29 /* DeepLinkRouting.swift in Sources */,
+				5A873DA11F8DEA3B12E72467 /* QuickCaptureWidget.swift in Sources */,
+				AEFAA7247F6E5C1EB392559E /* ScanReceiptControl.swift in Sources */,
+				4EB3E890FF67FFB217F187BE /* ScanReceiptIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B33618DF6617FADD34F141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58C1A3648B41D47E8686C18 /* AgentEntryConfirmationViews.swift in Sources */,
+				2D1CADC0B6D9964E2A6C4316 /* AgentImportBridge.swift in Sources */,
+				1F9571938D30C98475DBDE02 /* AppMetadata.swift in Sources */,
+				7E333D8ED36B9A587739EC28 /* AppServices.swift in Sources */,
+				B09903CD3C14FAC833581E19 /* CaptureViews.swift in Sources */,
+				250832F54C57E53080ACECA2 /* CategoryComposer.swift in Sources */,
+				47C71B1A2AE114900C7AA47E /* CategoryDisplay.swift in Sources */,
+				A94A41E68914A861B5E891BD /* ConfirmedDatePickerRow.swift in Sources */,
+				836033B0938D8A6761E131DF /* ContentView.swift in Sources */,
+				E74834E77F6369F2CC1D9FCC /* DeepLinkRouting.swift in Sources */,
+				C2345136B3169774343AF8FD /* DocumentCameraView.swift in Sources */,
+				19AF38C4D2BAC4AD966547A3 /* ExpenseFormatters.swift in Sources */,
+				66FEE921D500E1407C72B3AB /* ExternalCaptureAction.swift in Sources */,
+				14ED77D817CDDD67C67C1482 /* FoundationModelReceiptService.swift in Sources */,
+				27BEF31C7C43B80EC5DCF486 /* GroupsViews.swift in Sources */,
+				0EBE17834C4330E497E98FA9 /* IntelliExpenseApp.swift in Sources */,
+				0ADF79F624D64D8C2F157493 /* MacCommands.swift in Sources */,
+				EB15905CD8A12F823487C06A /* MacContentView.swift in Sources */,
+				F6D21B07A1E2C333DDDEB55E /* MacDesktopBehaviorSupport.swift in Sources */,
+				7B8DFCA3BDB1B8EE556E94A7 /* MacDoubleClickActionView.swift in Sources */,
+				6F33EAEC0B285C126C8C63A2 /* MacReceiptDetailPane.swift in Sources */,
+				E299136A54B3E56B4C722018 /* OnboardingViews.swift in Sources */,
+				DD3BCF06F59247065922301E /* PDFReceiptPageRasterizer.swift in Sources */,
+				3D09EF3B467E39AB296F004D /* PersistenceModels.swift in Sources */,
+				15F8F6CC79B79EDD1BFE9E29 /* PersistenceStack.swift in Sources */,
+				AB519AAFB8BDDF7D7216A30D /* PlatformImageSupport.swift in Sources */,
+				397BBF01703CBE31F7FDE946 /* PlatformPresentationSupport.swift in Sources */,
+				CA1E4CD2C21D2C74DD94DFE6 /* ReceiptCapturePageBuilder.swift in Sources */,
+				3B9ECD07E0DF5CD21B48375B /* ReceiptExportMapper.swift in Sources */,
+				FAD233EF4EF67439005B38A9 /* ReceiptFileIngestionProcessor.swift in Sources */,
+				9CB9657D0610194B65F00CD6 /* ReceiptImageViewer.swift in Sources */,
+				34658EC2640FFC609A04EDC5 /* ReceiptProcessingPipeline.swift in Sources */,
+				29F70F72DD31CBD50E203F39 /* ReceiptReviewForm.swift in Sources */,
+				85928F613F66DD99070126DF /* ReceiptStore.swift in Sources */,
+				85D7819B30E7F12382D9EE4C /* ReceiptsViews.swift in Sources */,
+				12C0BCC6E0651ACE00C24BDC /* ReviewViews.swift in Sources */,
+				5ACD4EB5C70FE0B2908718AC /* SandboxSeedData.swift in Sources */,
+				CF6D0C81BC7B729EBB1D0CF4 /* SettingsView.swift in Sources */,
+				34294C15C093A82DD4C316F1 /* ShareSheet.swift in Sources */,
+				413C40566FD27CD4E38EE2A5 /* SharedReceiptInbox.swift in Sources */,
+				19A9F0FFFE826BD6B8AB6B1B /* SharedReceiptInboxDrainProcessor.swift in Sources */,
+				1327681A909A147C6C0746B9 /* ToolbarPlacementSupport.swift in Sources */,
+				5211CBB6C291460E18DFC4D9 /* VisionDocumentOCRService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20B1EC390EBDA75C64CBDC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C23714BD1CC21D8C3772A4E /* ShareExtensionModel.swift in Sources */,
+				EBD4866F4E830EB14A6E33CB /* ShareExtensionView.swift in Sources */,
+				247C9F30353610438438FE75 /* ShareViewController.swift in Sources */,
+				45DFC7C2115A10FB7E1B770D /* SharedReceiptInbox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E4A338765F51ED9266F53F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F19549EADB1A14AEEFBD628 /* AgentImportBridgeTests.swift in Sources */,
+				8D2B2E6E1F0F2628BCA75C54 /* CaptureInputTests.swift in Sources */,
+				499FC6D56934DD39053DAFD9 /* CapturePipelineTests.swift in Sources */,
+				CFB549D1AA767B16C0822281 /* CategoryProfileAppTests.swift in Sources */,
+				2651F2A35AE679879F5AC24B /* DeepLinkRoutingTests.swift in Sources */,
+				B62A9E0E31F59CA8316739EB /* ExportShimTests.swift in Sources */,
+				4EED9D67462A3FEF54C9EAD5 /* FolderUserFacingRenameTests.swift in Sources */,
+				A726F7B68F7A299D09DC0A10 /* IntelliExpenseTests.swift in Sources */,
+				6F87812FB86CA9F560568B90 /* MacVisualPolishTests.swift in Sources */,
+				2F83197F57C5CF7BE6714B02 /* PersistenceTests.swift in Sources */,
+				1F28C7A42BE1E965EC326020 /* ReceiptReviewFormTests.swift in Sources */,
+				5D943FA199E8CC98B5C87B63 /* ReceiptServiceWrapperTests.swift in Sources */,
+				458AB2FCCA04BF3A6741BA62 /* ScanReceiptIntentTests.swift in Sources */,
+				16C446801899135B748AE1DA /* ShareExtensionHandoffTests.swift in Sources */,
+				E7DA88E22BCD616012ADA001 /* SharedReceiptInboxTests.swift in Sources */,
+				3D9F38958C69623ED77DADC5 /* TripDetailBreakdownRowsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3732CA96256FBC955227D45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778547C967380A091F291B2F /* AgentEntryConfirmationViews.swift in Sources */,
+				9FF346D63CFC3795659515EA /* AgentImportBridge.swift in Sources */,
+				D107092387D2E1353C40018D /* AppMetadata.swift in Sources */,
+				51F0B5D38E3BF328B4168FF7 /* AppServices.swift in Sources */,
+				404D5043284CA06721CFA090 /* CaptureViews.swift in Sources */,
+				265BBAC021ACF840CB902638 /* CategoryComposer.swift in Sources */,
+				BD7DF8368C31D5F30527E540 /* CategoryDisplay.swift in Sources */,
+				64096297465DD7D54A06EE89 /* ConfirmedDatePickerRow.swift in Sources */,
+				61DCEE0C6DD0E4850DA80416 /* ContentView.swift in Sources */,
+				D2B3A02D8E78DB4D851F71C2 /* DeepLinkRouting.swift in Sources */,
+				C3E21B92BFEC622AF75DC157 /* DocumentCameraView.swift in Sources */,
+				F14B85BBFA82B7914F3CD378 /* ExpenseFormatters.swift in Sources */,
+				B08756F177904C61E455DF44 /* ExternalCaptureAction.swift in Sources */,
+				C61214F5E332FF167CDC735D /* FoundationModelReceiptService.swift in Sources */,
+				C61E51A03F1F13E292D59631 /* GroupsViews.swift in Sources */,
+				2FFC8DE90D62F4896D7080BC /* IntelliExpenseApp.swift in Sources */,
+				C1FCAE93A5C8A588895FB168 /* MacCommands.swift in Sources */,
+				3FA2BDC3CDDA95F88F0664AA /* MacContentView.swift in Sources */,
+				789BDF7EBE25E7460C7740F5 /* MacDesktopBehaviorSupport.swift in Sources */,
+				0A208D1582182E48A936363B /* MacDoubleClickActionView.swift in Sources */,
+				6C4280C6C3C4680A797AE66C /* MacReceiptDetailPane.swift in Sources */,
+				EFED06E85CF5F5963A860962 /* OnboardingViews.swift in Sources */,
+				84CC04A8AC7349507A614FFE /* PDFReceiptPageRasterizer.swift in Sources */,
+				AD847409B93CF07B71550ADF /* PersistenceModels.swift in Sources */,
+				1D21F23F5885D41D87E85D4C /* PersistenceStack.swift in Sources */,
+				9E3F9C4C321CF36E44AE5753 /* PlatformImageSupport.swift in Sources */,
+				460A1C8B50E42D403265F287 /* PlatformPresentationSupport.swift in Sources */,
+				EA98E6E5D9163CE0806A7F99 /* ReceiptCapturePageBuilder.swift in Sources */,
+				9CA4F4EF902486B6D5E1D5CA /* ReceiptExportMapper.swift in Sources */,
+				F0799815ED8D2D096176308A /* ReceiptFileIngestionProcessor.swift in Sources */,
+				A18CCF6FE3B595FCDDD00134 /* ReceiptImageViewer.swift in Sources */,
+				4B447FDFB1DED6D6098F4B6D /* ReceiptProcessingPipeline.swift in Sources */,
+				286038B71B9249118BF960BB /* ReceiptReviewForm.swift in Sources */,
+				30D6D3D7DEDBEF001752C3E7 /* ReceiptStore.swift in Sources */,
+				5EC3D33A534D52F43F0EAB78 /* ReceiptsViews.swift in Sources */,
+				BBD19796F8819BE2A9536A56 /* ReviewViews.swift in Sources */,
+				53AD1E9D5D576CB32E4F33FC /* SandboxSeedData.swift in Sources */,
+				64C50028479A457D49C99AEB /* ScanReceiptIntent.swift in Sources */,
+				FEAE02517A102482D4C9A956 /* SettingsView.swift in Sources */,
+				4551B5C427C8B7CA6517B0BC /* ShareSheet.swift in Sources */,
+				30B04DFFE1E591678756E7BB /* SharedReceiptInbox.swift in Sources */,
+				5E944BADCC2CFA35C762307C /* SharedReceiptInboxDrainProcessor.swift in Sources */,
+				B50098E1FFDC66B6357DBDB0 /* ToolbarPlacementSupport.swift in Sources */,
+				F8FBFE24AA175854C5B986DD /* VisionDocumentOCRService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		321C040006D87230BE7CAECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10FF3F380275D8D66B19DD3 /* IntelliExpenseControls */;
+			targetProxy = 9E9E785AEDEE645B3F26E22A /* PBXContainerItemProxy */;
+		};
+		463B18BB8EAF6AB0DFB0B6F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9417C34726F4DCEC994D7AD /* IntelliExpenseControlsSandbox */;
+			targetProxy = 3D0B8A9F55950D30C4ECB429 /* PBXContainerItemProxy */;
+		};
+		82BD312AFA785E256C08E1ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85701FDD94ABA01F4BE476F5 /* IntelliExpenseShare */;
+			targetProxy = 7D0142CF235ACEEDB88B74A1 /* PBXContainerItemProxy */;
+		};
+		967B91300C810D58E1A20162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F611E0EB34B99FAE9886A42B /* IntelliExpense */;
+			targetProxy = E7BEFB401C114A11667AEA0C /* PBXContainerItemProxy */;
+		};
+		B4794630D6FA88CDE9F56898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F611E0EB34B99FAE9886A42B /* IntelliExpense */;
+			targetProxy = 4A828E84C221AD2367224A4F /* PBXContainerItemProxy */;
+		};
+		DF8927382F3BE6F75BD9E59B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6B421FE60D0B3533DC2CB35 /* IntelliExpenseMac */;
+			targetProxy = 24937DE76615C93CA646F9B5 /* PBXContainerItemProxy */;
+		};
+		FD068CDE3FA872312B0ED078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6B421FE60D0B3533DC2CB35 /* IntelliExpenseMac */;
+			targetProxy = 0B39C8F9A7427A05D83FF61A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		033DEF0DD9F6F7A1A3C9B54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IntelliExpense/IntelliExpense.entitlements;
+				CODE_SIGN_IDENTITY = "$(INTELLI_DEVELOPMENT_SIGNING_IDENTITY)";
+				CODE_SIGN_STYLE = "$(INTELLI_DEVELOPMENT_CODE_SIGN_STYLE)";
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpense/Info.plist;
+				INTELLI_DEVELOPMENT_CODE_SIGN_STYLE = Automatic;
+				INTELLI_DISTRIBUTION_CODE_SIGN_STYLE = Automatic;
+				INTELLI_TEAM_ID = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense;
+				PRODUCT_NAME = IntelliExpense;
+				PROVISIONING_PROFILE_SPECIFIER = "$(INTELLI_DEVELOPMENT_PROFILE)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) $(XCODE_27_SWIFT_CONDITION)";
+				TARGETED_DEVICE_FAMILY = 1;
+				XCODE_27_SWIFT_CONDITION = "";
+			};
+			name = Debug;
+		};
+		13692F5FC52144FF5F8C4AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IntelliExpense/IntelliExpenseMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpense/Info.macOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense;
+				PRODUCT_NAME = IntelliExpense;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) INTELLI_EXPENSE_MAC";
+			};
+			name = Release;
+		};
+		19858F5C1F6CFB492BE7D828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IntelliExpense/IntelliExpense.entitlements;
+				CODE_SIGN_IDENTITY = "$(INTELLI_DISTRIBUTION_SIGNING_IDENTITY)";
+				CODE_SIGN_STYLE = "$(INTELLI_DISTRIBUTION_CODE_SIGN_STYLE)";
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpense/Info.plist;
+				INTELLI_DEVELOPMENT_CODE_SIGN_STYLE = Automatic;
+				INTELLI_DISTRIBUTION_CODE_SIGN_STYLE = Automatic;
+				INTELLI_TEAM_ID = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense;
+				PRODUCT_NAME = IntelliExpense;
+				PROVISIONING_PROFILE_SPECIFIER = "$(INTELLI_DISTRIBUTION_PROFILE)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) $(XCODE_27_SWIFT_CONDITION)";
+				TARGETED_DEVICE_FAMILY = 1;
+				XCODE_27_SWIFT_CONDITION = "";
+			};
+			name = Release;
+		};
+		1AB7441ED92484223AB062E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = IntelliExpenseShare/IntelliExpenseShare.entitlements;
+				CODE_SIGN_IDENTITY = "$(INTELLI_DISTRIBUTION_SIGNING_IDENTITY)";
+				CODE_SIGN_STYLE = "$(INTELLI_DISTRIBUTION_CODE_SIGN_STYLE)";
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpenseShare/Info.plist;
+				INTELLI_DEVELOPMENT_CODE_SIGN_STYLE = Automatic;
+				INTELLI_DISTRIBUTION_CODE_SIGN_STYLE = Automatic;
+				INTELLI_TEAM_ID = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.share;
+				PRODUCT_NAME = IntelliExpenseShare;
+				PROVISIONING_PROFILE_SPECIFIER = "$(INTELLI_SHARE_DISTRIBUTION_PROFILE)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3697D73FA2E4CD840739D7B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.macuitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = IntelliExpenseMac;
+			};
+			name = Debug;
+		};
+		3D9B758258CD2AEEAA889ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntelliExpense;
+			};
+			name = Release;
+		};
+		490DBD9F118B8E65142E00AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = IntelliExpenseShare/IntelliExpenseShare.entitlements;
+				CODE_SIGN_IDENTITY = "$(INTELLI_DEVELOPMENT_SIGNING_IDENTITY)";
+				CODE_SIGN_STYLE = "$(INTELLI_DEVELOPMENT_CODE_SIGN_STYLE)";
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpenseShare/Info.plist;
+				INTELLI_DEVELOPMENT_CODE_SIGN_STYLE = Automatic;
+				INTELLI_DISTRIBUTION_CODE_SIGN_STYLE = Automatic;
+				INTELLI_TEAM_ID = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.share;
+				PRODUCT_NAME = IntelliExpenseShare;
+				PROVISIONING_PROFILE_SPECIFIER = "$(INTELLI_SHARE_DEVELOPMENT_PROFILE)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		52D020786ECEC4C4A6923B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		53D3B91296BC699418D9B609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		65E66DC55790AFC9046791DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.macuitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = IntelliExpenseMac;
+			};
+			name = Release;
+		};
+		72ECCC9B3EF321F3505794C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntelliExpense;
+			};
+			name = Debug;
+		};
+		7CF932CBEB28865C27B81D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.mactests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliExpense.app/Contents/MacOS/IntelliExpense";
+			};
+			name = Debug;
+		};
+		81EDC79F00FB96DB7EC7D872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliExpense.app/IntelliExpense";
+			};
+			name = Debug;
+		};
+		9601218046964DE140A4BD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpenseControls/Info.Sandbox.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.sandbox.controls;
+				PRODUCT_NAME = IntelliExpenseControlsSandbox;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) INTELLI_EXPENSE_SANDBOX";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		98B6D87DBB9221EFCE38BAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpense/Info.Sandbox.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.sandbox;
+				PRODUCT_NAME = IntelliExpenseSandbox;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) INTELLI_EXPENSE_SANDBOX";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9E8E1ED5A3EE6C18D1EB7851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "$(INTELLI_DISTRIBUTION_SIGNING_IDENTITY)";
+				CODE_SIGN_STYLE = "$(INTELLI_DISTRIBUTION_CODE_SIGN_STYLE)";
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpenseControls/Info.plist;
+				INTELLI_DEVELOPMENT_CODE_SIGN_STYLE = Automatic;
+				INTELLI_DISTRIBUTION_CODE_SIGN_STYLE = Automatic;
+				INTELLI_TEAM_ID = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.controls;
+				PRODUCT_NAME = IntelliExpenseControls;
+				PROVISIONING_PROFILE_SPECIFIER = "$(INTELLI_CONTROLS_DISTRIBUTION_PROFILE)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9EA66C4F1C73C2CCD93B64CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpense/Info.Sandbox.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.sandbox;
+				PRODUCT_NAME = IntelliExpenseSandbox;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) INTELLI_EXPENSE_SANDBOX";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B318770FC8471ED7DCA70C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "$(INTELLI_DEVELOPMENT_SIGNING_IDENTITY)";
+				CODE_SIGN_STYLE = "$(INTELLI_DEVELOPMENT_CODE_SIGN_STYLE)";
+				DEVELOPMENT_TEAM = "$(INTELLI_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpenseControls/Info.plist;
+				INTELLI_DEVELOPMENT_CODE_SIGN_STYLE = Automatic;
+				INTELLI_DISTRIBUTION_CODE_SIGN_STYLE = Automatic;
+				INTELLI_TEAM_ID = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.controls;
+				PRODUCT_NAME = IntelliExpenseControls;
+				PROVISIONING_PROFILE_SPECIFIER = "$(INTELLI_CONTROLS_DEVELOPMENT_PROFILE)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DA819D3DBC3C8E3610E4814B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpenseControls/Info.Sandbox.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.sandbox.controls;
+				PRODUCT_NAME = IntelliExpenseControlsSandbox;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) INTELLI_EXPENSE_SANDBOX";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DE7E84FD1D086DF1ABE93270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliExpense.app/IntelliExpense";
+			};
+			name = Release;
+		};
+		EDB1D4BE208405E64C85F448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IntelliExpense/IntelliExpenseMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = IntelliExpense/Info.macOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense;
+				PRODUCT_NAME = IntelliExpense;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) INTELLI_EXPENSE_MAC";
+			};
+			name = Debug;
+		};
+		F4DA6B999C40318336D52728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nags.intelliexpense.mactests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliExpense.app/Contents/MacOS/IntelliExpense";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F4D98080ACEA5BEFD2FFC9 /* Build configuration list for PBXNativeTarget "IntelliExpense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033DEF0DD9F6F7A1A3C9B54F /* Debug */,
+				19858F5C1F6CFB492BE7D828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		25657F2B0B033AEE88639CA3 /* Build configuration list for PBXNativeTarget "IntelliExpenseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72ECCC9B3EF321F3505794C4 /* Debug */,
+				3D9B758258CD2AEEAA889ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3F3A4F89D0BE7D8DD6CAA6D7 /* Build configuration list for PBXNativeTarget "IntelliExpenseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81EDC79F00FB96DB7EC7D872 /* Debug */,
+				DE7E84FD1D086DF1ABE93270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		541A0A6E03F77E10B6EA4A20 /* Build configuration list for PBXNativeTarget "IntelliExpenseControls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B318770FC8471ED7DCA70C67 /* Debug */,
+				9E8E1ED5A3EE6C18D1EB7851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B4F2123592ABF28A4C1E2F3 /* Build configuration list for PBXProject "IntelliExpense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D020786ECEC4C4A6923B48 /* Debug */,
+				53D3B91296BC699418D9B609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6C2C36D4B149905D1E2628B9 /* Build configuration list for PBXNativeTarget "IntelliExpenseControlsSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA819D3DBC3C8E3610E4814B /* Debug */,
+				9601218046964DE140A4BD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76EBC3330CCD6221BCDB583B /* Build configuration list for PBXNativeTarget "IntelliExpenseMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3697D73FA2E4CD840739D7B1 /* Debug */,
+				65E66DC55790AFC9046791DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B66F5681635435FB4C376259 /* Build configuration list for PBXNativeTarget "IntelliExpenseSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B6D87DBB9221EFCE38BAB5 /* Debug */,
+				9EA66C4F1C73C2CCD93B64CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BA28AA9A5AB3546CBEC2A736 /* Build configuration list for PBXNativeTarget "IntelliExpenseMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF932CBEB28865C27B81D44 /* Debug */,
+				F4DA6B999C40318336D52728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C80C1B678D6CDB0C9383CB6A /* Build configuration list for PBXNativeTarget "IntelliExpenseMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDB1D4BE208405E64C85F448 /* Debug */,
+				13692F5FC52144FF5F8C4AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8CCE0F8720E3B2719DE5025 /* Build configuration list for PBXNativeTarget "IntelliExpenseShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490DBD9F118B8E65142E00AB /* Debug */,
+				1AB7441ED92484223AB062E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		8507D8FB7809F382154F7C3D /* XCLocalSwiftPackageReference "ExpenseCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ExpenseCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31E0F2D862B883951212816C /* ExpenseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExpenseCore;
+		};
+		87DE0AEAC989000C42BE50FD /* ExpenseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExpenseCore;
+		};
+		FC9D6DE7F040F9E2E8B81776 /* ExpenseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExpenseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AFF52B7B942C31726021E5B4 /* Project object */;
+}

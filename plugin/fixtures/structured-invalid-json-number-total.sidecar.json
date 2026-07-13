@@ -1,0 +1,14 @@
+{
+  "protocolVersion": 1,
+  "mode": "structured",
+  "sourceLabel": "codex",
+  "receipt": {
+    "merchant": "REWE CITY",
+    "date": "2026-06-14",
+    "total": 84.50,
+    "currency": "EUR",
+    "expenseType": "food",
+    "paymentMethod": "card",
+    "userConfirmed": true
+  }
+}

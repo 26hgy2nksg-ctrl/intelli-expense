@@ -1,0 +1,295 @@
+name: IntelliExpense
+options:
+  minimumXcodeGenVersion: 2.43.0
+  deploymentTarget:
+    iOS: "26.0"
+    macOS: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    DEVELOPMENT_TEAM: "$(INTELLI_TEAM_ID)"
+    CODE_SIGN_STYLE: Automatic
+packages:
+  ExpenseCore:
+    path: ExpenseCore
+targets:
+  IntelliExpense:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: IntelliExpense
+        excludes:
+          - "Info.Sandbox.plist"
+          - "Info.macOS.plist"
+          - "IntelliExpenseMac.entitlements"
+          - "Resources/AppIcon.icon"
+          - "Resources/AppIcon.icon/**"
+      - path: IntelliExpense/Resources/AppIcon.icon
+        type: file
+    resources:
+      - path: IntelliExpense/Resources
+        excludes:
+          - "AppIcon.icon"
+          - "AppIcon.icon/**"
+    dependencies:
+      - package: ExpenseCore
+      - target: IntelliExpenseShare
+        embed: true
+      - target: IntelliExpenseControls
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense
+        PRODUCT_NAME: IntelliExpense
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_FILE: IntelliExpense/Info.plist
+        GENERATE_INFOPLIST_FILE: "NO"
+        CODE_SIGN_ENTITLEMENTS: IntelliExpense/IntelliExpense.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        XCODE_27_SWIFT_CONDITION: ""
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) $(XCODE_27_SWIFT_CONDITION)"
+        DEVELOPMENT_TEAM: "$(INTELLI_TEAM_ID)"
+        INTELLI_TEAM_ID: ""
+        INTELLI_DEVELOPMENT_CODE_SIGN_STYLE: Automatic
+        INTELLI_DISTRIBUTION_CODE_SIGN_STYLE: Automatic
+      configs:
+        Debug:
+          CODE_SIGN_STYLE: "$(INTELLI_DEVELOPMENT_CODE_SIGN_STYLE)"
+          CODE_SIGN_IDENTITY: "$(INTELLI_DEVELOPMENT_SIGNING_IDENTITY)"
+          PROVISIONING_PROFILE_SPECIFIER: "$(INTELLI_DEVELOPMENT_PROFILE)"
+        Release:
+          CODE_SIGN_STYLE: "$(INTELLI_DISTRIBUTION_CODE_SIGN_STYLE)"
+          CODE_SIGN_IDENTITY: "$(INTELLI_DISTRIBUTION_SIGNING_IDENTITY)"
+          PROVISIONING_PROFILE_SPECIFIER: "$(INTELLI_DISTRIBUTION_PROFILE)"
+  IntelliExpenseSandbox:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: IntelliExpense
+        excludes:
+          - "Info.plist"
+          - "Info.Sandbox.plist"
+          - "Info.macOS.plist"
+          - "IntelliExpense.entitlements"
+          - "IntelliExpenseMac.entitlements"
+          - "Resources/AppIcon.icon"
+          - "Resources/AppIcon.icon/**"
+      - path: IntelliExpense/Resources/AppIcon.icon
+        type: file
+    resources:
+      - path: IntelliExpense/Resources
+        excludes:
+          - "AppIcon.icon"
+          - "AppIcon.icon/**"
+    dependencies:
+      - package: ExpenseCore
+      - target: IntelliExpenseControlsSandbox
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.sandbox
+        PRODUCT_NAME: IntelliExpenseSandbox
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_FILE: IntelliExpense/Info.Sandbox.plist
+        GENERATE_INFOPLIST_FILE: "NO"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) INTELLI_EXPENSE_SANDBOX"
+  IntelliExpenseMac:
+    type: application
+    platform: macOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: IntelliExpense
+        excludes:
+          - "Info.plist"
+          - "Info.Sandbox.plist"
+          - "IntelliExpense.entitlements"
+          - "Resources/AppIcon.icon"
+          - "Resources/AppIcon.icon/**"
+          - "AppIntents/ScanReceiptIntent.swift"
+      - path: IntelliExpense/Resources/AppIcon.icon
+        type: file
+    resources:
+      - path: IntelliExpense/Resources
+        excludes:
+          - "AppIcon.icon"
+          - "AppIcon.icon/**"
+    dependencies:
+      - package: ExpenseCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense
+        PRODUCT_NAME: IntelliExpense
+        INFOPLIST_FILE: IntelliExpense/Info.macOS.plist
+        GENERATE_INFOPLIST_FILE: "NO"
+        CODE_SIGN_ENTITLEMENTS: IntelliExpense/IntelliExpenseMac.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MACOSX_DEPLOYMENT_TARGET: "26.0"
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) INTELLI_EXPENSE_MAC"
+  IntelliExpenseShare:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - IntelliExpenseShare
+      - path: IntelliExpense/Capture/SharedReceiptInbox.swift
+    resources:
+      - IntelliExpenseShare/Resources
+      - IntelliExpense/Resources/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.share
+        PRODUCT_NAME: IntelliExpenseShare
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_FILE: IntelliExpenseShare/Info.plist
+        GENERATE_INFOPLIST_FILE: "NO"
+        CODE_SIGN_ENTITLEMENTS: IntelliExpenseShare/IntelliExpenseShare.entitlements
+        APPLICATION_EXTENSION_API_ONLY: "YES"
+        DEVELOPMENT_TEAM: "$(INTELLI_TEAM_ID)"
+        INTELLI_TEAM_ID: ""
+        INTELLI_DEVELOPMENT_CODE_SIGN_STYLE: Automatic
+        INTELLI_DISTRIBUTION_CODE_SIGN_STYLE: Automatic
+      configs:
+        Debug:
+          CODE_SIGN_STYLE: "$(INTELLI_DEVELOPMENT_CODE_SIGN_STYLE)"
+          CODE_SIGN_IDENTITY: "$(INTELLI_DEVELOPMENT_SIGNING_IDENTITY)"
+          PROVISIONING_PROFILE_SPECIFIER: "$(INTELLI_SHARE_DEVELOPMENT_PROFILE)"
+        Release:
+          CODE_SIGN_STYLE: "$(INTELLI_DISTRIBUTION_CODE_SIGN_STYLE)"
+          CODE_SIGN_IDENTITY: "$(INTELLI_DISTRIBUTION_SIGNING_IDENTITY)"
+          PROVISIONING_PROFILE_SPECIFIER: "$(INTELLI_SHARE_DISTRIBUTION_PROFILE)"
+  IntelliExpenseControls:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - IntelliExpenseControls/ScanReceiptControl.swift
+      - IntelliExpenseControls/QuickCaptureWidget.swift
+      - IntelliExpenseControls/WidgetAssets.xcassets
+      - path: IntelliExpense/AppIntents/ScanReceiptIntent.swift
+      - path: IntelliExpense/App/DeepLinkRouting.swift
+    resources:
+      - path: IntelliExpense/Resources/AppShortcuts.xcstrings
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.controls
+        PRODUCT_NAME: IntelliExpenseControls
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_FILE: IntelliExpenseControls/Info.plist
+        GENERATE_INFOPLIST_FILE: "NO"
+        APPLICATION_EXTENSION_API_ONLY: "YES"
+        DEVELOPMENT_TEAM: "$(INTELLI_TEAM_ID)"
+        INTELLI_TEAM_ID: ""
+        INTELLI_DEVELOPMENT_CODE_SIGN_STYLE: Automatic
+        INTELLI_DISTRIBUTION_CODE_SIGN_STYLE: Automatic
+      configs:
+        Debug:
+          CODE_SIGN_STYLE: "$(INTELLI_DEVELOPMENT_CODE_SIGN_STYLE)"
+          CODE_SIGN_IDENTITY: "$(INTELLI_DEVELOPMENT_SIGNING_IDENTITY)"
+          PROVISIONING_PROFILE_SPECIFIER: "$(INTELLI_CONTROLS_DEVELOPMENT_PROFILE)"
+        Release:
+          CODE_SIGN_STYLE: "$(INTELLI_DISTRIBUTION_CODE_SIGN_STYLE)"
+          CODE_SIGN_IDENTITY: "$(INTELLI_DISTRIBUTION_SIGNING_IDENTITY)"
+          PROVISIONING_PROFILE_SPECIFIER: "$(INTELLI_CONTROLS_DISTRIBUTION_PROFILE)"
+  IntelliExpenseControlsSandbox:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - IntelliExpenseControls/ScanReceiptControl.swift
+      - IntelliExpenseControls/QuickCaptureWidget.swift
+      - IntelliExpenseControls/WidgetAssets.xcassets
+      - path: IntelliExpense/AppIntents/ScanReceiptIntent.swift
+      - path: IntelliExpense/App/DeepLinkRouting.swift
+    resources:
+      - path: IntelliExpense/Resources/AppShortcuts.xcstrings
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.sandbox.controls
+        PRODUCT_NAME: IntelliExpenseControlsSandbox
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_FILE: IntelliExpenseControls/Info.Sandbox.plist
+        GENERATE_INFOPLIST_FILE: "NO"
+        APPLICATION_EXTENSION_API_ONLY: "YES"
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) INTELLI_EXPENSE_SANDBOX"
+  IntelliExpenseTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - IntelliExpenseTests
+    dependencies:
+      - target: IntelliExpense
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.tests
+        GENERATE_INFOPLIST_FILE: "YES"
+  IntelliExpenseUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - IntelliExpenseUITests
+    dependencies:
+      - target: IntelliExpense
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.uitests
+        GENERATE_INFOPLIST_FILE: "YES"
+  IntelliExpenseMacUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    deploymentTarget: "26.0"
+    sources:
+      - IntelliExpenseMacUITests
+    dependencies:
+      - target: IntelliExpenseMac
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.macuitests
+        GENERATE_INFOPLIST_FILE: "YES"
+  IntelliExpenseMacTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "26.0"
+    sources:
+      - IntelliExpenseMacTests
+    dependencies:
+      - target: IntelliExpenseMac
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.mactests
+        GENERATE_INFOPLIST_FILE: "YES"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/IntelliExpense.app/Contents/MacOS/IntelliExpense"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  IntelliExpense:
+    build:
+      targets:
+        IntelliExpense: all
+        IntelliExpenseShare: all
+        IntelliExpenseControls: all
+    test:
+      config: Debug
+      targets:
+        - IntelliExpenseTests
+        - IntelliExpenseUITests
+  IntelliExpenseSandbox:
+    build:
+      targets:
+        IntelliExpenseSandbox: all
+        IntelliExpenseControlsSandbox: all
+  IntelliExpenseMac:
+    build:
+      targets:
+        IntelliExpenseMac: all
+    test:
+      config: Debug
+      targets:
+        - IntelliExpenseMacTests
+        - IntelliExpenseMacUITests

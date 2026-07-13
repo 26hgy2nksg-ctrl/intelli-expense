@@ -1,0 +1,6 @@
+CITY KIOSK
+DATE 2026-06-16
+
+Coffee
+TOTAL 9.9O
+Payment unknown

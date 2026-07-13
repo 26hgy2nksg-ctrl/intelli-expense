@@ -1,0 +1,12 @@
+ANAND RESTAURANT
+GSTIN 27ABCDE1234F1Z5
+Bill No: 1042
+Date: 14/06/2026
+
+Paneer Meal              920.00
+Service Charge           80.00
+Sub Total             1,120.00
+CGST                     60.00
+SGST                     60.00
+GRAND TOTAL          ₹1,240.00
+Paid by VISA **** 4242

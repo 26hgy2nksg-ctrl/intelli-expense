@@ -1,0 +1,105 @@
+{
+  "fill": {
+    "linear-gradient": [
+      "extended-srgb:0.05098,0.43922,0.29412,1.00000",
+      "extended-srgb:0.02353,0.23137,0.16863,1.00000"
+    ],
+    "orientation": {
+      "start": {
+        "x": 0.12,
+        "y": 0.06
+      },
+      "stop": {
+        "x": 0.88,
+        "y": 0.96
+      }
+    }
+  },
+  "fill-specializations": [
+    {
+      "appearance": "dark",
+      "value": {
+        "linear-gradient": [
+          "extended-srgb:0.02353,0.11765,0.09020,1.00000",
+          "extended-srgb:0.05490,0.29020,0.20784,1.00000"
+        ],
+        "orientation": {
+          "start": {
+            "x": 0.12,
+            "y": 0.06
+          },
+          "stop": {
+            "x": 0.88,
+            "y": 0.96
+          }
+        }
+      }
+    },
+    {
+      "appearance": "tinted",
+      "value": "automatic"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Receipt sheet",
+      "layers": [
+        {
+          "image-name": "receipt-sheet.png",
+          "name": "Receipt sheet"
+        }
+      ],
+      "lighting": "individual",
+      "specular": true,
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.18
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.08
+      }
+    },
+    {
+      "name": "Ledger marks",
+      "layers": [
+        {
+          "image-name": "receipt-details.png",
+          "name": "Ledger marks"
+        }
+      ],
+      "lighting": "individual",
+      "specular": true,
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.06
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.04
+      }
+    },
+    {
+      "name": "Scan frame",
+      "layers": [
+        {
+          "image-name": "scan-frame.png",
+          "name": "Scan frame"
+        }
+      ],
+      "lighting": "individual",
+      "specular": true,
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.16
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.16
+      }
+    }
+  ],
+  "supported-platforms": {
+    "squares": "shared"
+  }
+}

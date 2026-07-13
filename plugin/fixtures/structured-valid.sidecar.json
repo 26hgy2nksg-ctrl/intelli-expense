@@ -1,0 +1,20 @@
+{
+  "protocolVersion": 1,
+  "mode": "structured",
+  "suggestedTrip": {
+    "id": "x-swiftdata://ExpenseGroup/berlin-2026",
+    "name": "Berlin Trip"
+  },
+  "note": "User approved every field in chat.",
+  "sourceLabel": "codex",
+  "receipt": {
+    "merchant": "REWE CITY",
+    "date": "2026-06-14",
+    "total": "84.50",
+    "currency": "EUR",
+    "expenseType": "food",
+    "paymentMethod": "card",
+    "notes": "Team dinner",
+    "userConfirmed": true
+  }
+}

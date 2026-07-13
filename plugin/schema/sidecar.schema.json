@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://intelli-expense.local/schema/agent-import-sidecar.schema.json",
+  "title": "Intelli-Expense Agent Import Sidecar",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "protocolVersion",
+    "mode"
+  ],
+  "properties": {
+    "protocolVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "structured",
+        "raw"
+      ]
+    },
+    "suggestedTrip": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "sourceLabel": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "merchant",
+        "date",
+        "total",
+        "currency",
+        "expenseType",
+        "paymentMethod",
+        "userConfirmed"
+      ],
+      "properties": {
+        "merchant": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "total": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+)?$"
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        },
+        "expenseType": {
+          "type": "string",
+          "enum": [
+            "food",
+            "hotel",
+            "flight",
+            "taxi",
+            "other"
+          ]
+        },
+        "paymentMethod": {
+          "type": "string",
+          "enum": [
+            "card",
+            "cash"
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "userConfirmed": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "structured"
+          }
+        },
+        "required": [
+          "mode"
+        ]
+      },
+      "then": {
+        "required": [
+          "receipt"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+name: macOS UI Automation
+run-name: "macOS UI: ${{ inputs.test_filter }} — ${{ inputs.reason }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_filter:
+        description: Exact XCTest class or method under IntelliExpenseMacUITests
+        type: string
+        required: true
+        default: IntelliExpenseMacUITests/IntelliExpenseMacUITests/testEmptyDetailStateRendersWhenNothingIsSelected
+      reason:
+        description: Why native Mac UI automation is required
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+# Hosted Mac minutes are scarce. Queue requests instead of overlapping jobs or
+# cancelling work that has already started billing. Push and PR triggers are forbidden.
+concurrency:
+  group: intelli-expense-hosted-macos-ui
+  cancel-in-progress: false
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_26.5.app/Contents/Developer
+  XCODEGEN_MINIMUM_VERSION: 2.43.0
+  PROJECT: IntelliExpense.xcodeproj
+  SCHEME: IntelliExpenseMac
+  DESTINATION: platform=macOS
+  EVIDENCE_STEM: IntelliExpenseMac-UI
+
+jobs:
+  mac-ui:
+    name: macOS Functional UI
+    runs-on: macos-26
+    timeout-minutes: 20
+    steps:
+      - name: Record hosted runner start
+        run: date +%s > "$RUNNER_TEMP/hosted-start-epoch"
+
+      - name: Check out source
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+
+      - name: Install and verify XcodeGen
+        run: |
+          if ! command -v xcodegen >/dev/null; then
+            brew install xcodegen
+          fi
+          python3 - "$(xcodegen --version | awk '{print $NF}')" "$XCODEGEN_MINIMUM_VERSION" <<'PY'
+          import sys
+
+          actual = tuple(map(int, sys.argv[1].split(".")))
+          minimum = tuple(map(int, sys.argv[2].split(".")))
+          if actual < minimum:
+              raise SystemExit(f"XcodeGen {actual} is older than required {minimum}")
+          PY
+
+      - name: Generate project and verify no drift
+        run: |
+          xcodegen generate
+          git diff --exit-code -- IntelliExpense.xcodeproj
+
+      - name: Run selected native Mac UI test
+        env:
+          REQUESTED_TEST_FILTER: ${{ inputs.test_filter }}
+        run: |
+          set -o pipefail
+          test_filter="$REQUESTED_TEST_FILTER"
+          if [[ ! "$test_filter" =~ ^IntelliExpenseMacUITests/IntelliExpenseMacUITests(/[A-Za-z0-9_]+)?$ ]]; then
+            echo "Filter must select IntelliExpenseMacUITests/IntelliExpenseMacUITests or exactly one of its methods." >&2
+            exit 2
+          fi
+          xcodebuild \
+            -project "$PROJECT" \
+            -scheme "$SCHEME" \
+            -destination "$DESTINATION" \
+            -derivedDataPath "$RUNNER_TEMP/DerivedData-mac-ui" \
+            -resultBundlePath "$RUNNER_TEMP/$EVIDENCE_STEM.xcresult" \
+            test \
+            "-only-testing:$test_filter" \
+            CODE_SIGNING_ALLOWED=NO \
+            DEVELOPMENT_TEAM= \
+            2>&1 | tee "$RUNNER_TEMP/$EVIDENCE_STEM.log"
+
+      - name: Publish result and usage summary
+        if: always()
+        run: |
+          started="$(cat "$RUNNER_TEMP/hosted-start-epoch")"
+          elapsed_seconds="$(( $(date +%s) - started ))"
+          estimated_minutes="$(( (elapsed_seconds + 59) / 60 ))"
+          printf '{"step_observed_seconds":%s,"rounded_minutes":%s}\n' \
+            "$elapsed_seconds" "$estimated_minutes" > "$RUNNER_TEMP/$EVIDENCE_STEM-usage.json"
+          {
+            echo "### macOS Functional UI"
+            echo "Selected filter: \`${{ inputs.test_filter }}\`"
+            echo "Reason: ${{ inputs.reason }}"
+            echo "Step-observed hosted use: **${estimated_minutes} minute(s)** (${elapsed_seconds} seconds)."
+            echo "Record GitHub's authoritative job duration in docs/verification/github-macos-runner-usage.md."
+            if [[ -d "$RUNNER_TEMP/$EVIDENCE_STEM.xcresult" ]] && \
+              xcrun xcresulttool get test-results summary \
+                --path "$RUNNER_TEMP/$EVIDENCE_STEM.xcresult" \
+                --compact > "$RUNNER_TEMP/$EVIDENCE_STEM-summary.json"; then
+              echo '```json'
+              cat "$RUNNER_TEMP/$EVIDENCE_STEM-summary.json"
+              echo '```'
+            else
+              echo "No readable xcresult summary was produced. Inspect the uploaded raw log."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload Mac UI evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: macos-functional-ui-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/IntelliExpenseMac-UI.xcresult
+            ${{ runner.temp }}/IntelliExpenseMac-UI.log
+            ${{ runner.temp }}/IntelliExpenseMac-UI-summary.json
+            ${{ runner.temp }}/IntelliExpenseMac-UI-usage.json
+          if-no-files-found: warn
+          retention-days: 14

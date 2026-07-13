@@ -1,0 +1,9 @@
+{
+  "protocolVersion": 1,
+  "mode": "raw",
+  "suggestedTrip": {
+    "name": "Berlin Trip"
+  },
+  "note": "Agent could not read this receipt confidently.",
+  "sourceLabel": "codex"
+}

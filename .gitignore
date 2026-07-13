@@ -1,0 +1,13 @@
+.DS_Store
+Makefile.local
+.build/
+build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.moved-aside
+*.swp
+xcresult/
+*.xcresult
