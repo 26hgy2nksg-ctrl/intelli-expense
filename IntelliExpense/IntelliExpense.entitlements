@@ -4,11 +4,11 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.nags.intelliexpense</string>
+		<string>group.com.alikaradeniz.expense</string>
 	</array>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.com.nags.intelliexpense</string>
+		<string>iCloud.com.alikaradeniz.expense</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>

@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 enum PersistenceStack {
-    static let cloudKitContainerIdentifier = "iCloud.com.nags.intelliexpense"
+    static let cloudKitContainerIdentifier = "iCloud.com.alikaradeniz.expense"
 
     static var schema: Schema {
         Schema([

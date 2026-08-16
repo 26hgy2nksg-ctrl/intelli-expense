@@ -43,7 +43,7 @@ targets:
         embed: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense
         PRODUCT_NAME: IntelliExpense
         TARGETED_DEVICE_FAMILY: "1"
         INFOPLIST_FILE: IntelliExpense/Info.plist
@@ -92,7 +92,7 @@ targets:
         embed: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.sandbox
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.sandbox
         PRODUCT_NAME: IntelliExpenseSandbox
         TARGETED_DEVICE_FAMILY: "1"
         INFOPLIST_FILE: IntelliExpense/Info.Sandbox.plist
@@ -123,7 +123,7 @@ targets:
       - package: ExpenseCore
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense
         PRODUCT_NAME: IntelliExpense
         INFOPLIST_FILE: IntelliExpense/Info.macOS.plist
         GENERATE_INFOPLIST_FILE: "NO"
@@ -143,7 +143,7 @@ targets:
       - IntelliExpense/Resources/Assets.xcassets
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.share
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.share
         PRODUCT_NAME: IntelliExpenseShare
         TARGETED_DEVICE_FAMILY: "1"
         INFOPLIST_FILE: IntelliExpenseShare/Info.plist
@@ -177,7 +177,7 @@ targets:
       - path: IntelliExpense/Resources/AppShortcuts.xcstrings
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.controls
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.controls
         PRODUCT_NAME: IntelliExpenseControls
         TARGETED_DEVICE_FAMILY: "1"
         INFOPLIST_FILE: IntelliExpenseControls/Info.plist
@@ -210,7 +210,7 @@ targets:
       - path: IntelliExpense/Resources/AppShortcuts.xcstrings
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.sandbox.controls
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.sandbox.controls
         PRODUCT_NAME: IntelliExpenseControlsSandbox
         TARGETED_DEVICE_FAMILY: "1"
         INFOPLIST_FILE: IntelliExpenseControls/Info.Sandbox.plist
@@ -227,7 +227,7 @@ targets:
       - target: IntelliExpense
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.tests
         GENERATE_INFOPLIST_FILE: "YES"
   IntelliExpenseUITests:
     type: bundle.ui-testing
@@ -239,7 +239,7 @@ targets:
       - target: IntelliExpense
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.uitests
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.uitests
         GENERATE_INFOPLIST_FILE: "YES"
   IntelliExpenseMacUITests:
     type: bundle.ui-testing
@@ -251,7 +251,7 @@ targets:
       - target: IntelliExpenseMac
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.macuitests
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.macuitests
         GENERATE_INFOPLIST_FILE: "YES"
   IntelliExpenseMacTests:
     type: bundle.unit-test
@@ -263,7 +263,7 @@ targets:
       - target: IntelliExpenseMac
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.nags.intelliexpense.mactests
+        PRODUCT_BUNDLE_IDENTIFIER: com.alikaradeniz.expense.mactests
         GENERATE_INFOPLIST_FILE: "YES"
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/IntelliExpense.app/Contents/MacOS/IntelliExpense"
         BUNDLE_LOADER: "$(TEST_HOST)"

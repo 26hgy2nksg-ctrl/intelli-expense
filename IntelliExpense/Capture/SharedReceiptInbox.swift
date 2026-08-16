@@ -16,7 +16,7 @@ struct SharedInboxItem: Identifiable, Equatable {
 }
 
 struct SharedReceiptInbox {
-    static let appGroupIdentifier = "group.com.nags.intelliexpense"
+    static let appGroupIdentifier = "group.com.alikaradeniz.expense"
     private static let inboxDirectoryName = "SharedInbox"
     private static let manifestFilename = "manifest.json"
     private let fileManager: FileManager

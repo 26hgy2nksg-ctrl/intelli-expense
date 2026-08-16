@@ -20,3 +20,11 @@ marketing/
 docs/assets/app-icon-options/
 docs/specs/SPEC-oss-publication.md
 private/
+
+# Never commit real accounting test data or secrets
+LocalTestData/
+TestDocuments/
+*.env
+.env.*
+*.p12
+*.mobileprovision
