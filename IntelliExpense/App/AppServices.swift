@@ -98,7 +98,9 @@ struct AppServices {
         if let override = launchConfiguration.availabilityOverride {
             availabilityProvider = FakeModelAvailabilityProvider(status: override)
         } else {
-            availabilityProvider = FoundationModelAvailabilityProvider()
+            availabilityProvider = NonBlockingModelAvailabilityProvider(
+                base: FoundationModelAvailabilityProvider()
+            )
         }
 
         let ocrService: any OCRServicing
@@ -255,6 +257,28 @@ struct AppServices {
     private static var uiTestSharedInboxContainerURL: URL {
         FileManager.default.temporaryDirectory
             .appendingPathComponent("IntelliExpenseUITestSharedInbox", isDirectory: true)
+    }
+}
+
+struct NonBlockingModelAvailabilityProvider: ModelAvailabilityProviding {
+    var base: any ModelAvailabilityProviding
+
+    func currentAvailability() async -> ModelAvailabilityStatus {
+        let status = await base.currentAvailability()
+        switch status {
+        case .appleIntelligenceNotEnabled, .deviceNotEligible:
+            return .unknownUnavailable
+        case .available, .modelNotReady, .unknownUnavailable:
+            return status
+        }
+    }
+
+    func supportsLocale(_ locale: Locale) -> Bool {
+        base.supportsLocale(locale)
+    }
+
+    func supportsImageInput() -> Bool {
+        base.supportsImageInput()
     }
 }
 
