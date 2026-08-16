@@ -84,9 +84,9 @@ public enum ModelAvailabilityStatus: Equatable, Sendable {
 
     public var blocksCapture: Bool {
         switch self {
-        case .available, .modelNotReady:
+        case .available, .modelNotReady, .unknownUnavailable:
             false
-        case .appleIntelligenceNotEnabled, .deviceNotEligible, .unknownUnavailable:
+        case .appleIntelligenceNotEnabled, .deviceNotEligible:
             true
         }
     }
